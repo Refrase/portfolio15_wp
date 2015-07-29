@@ -1,0 +1,5 @@
+/* ----- Introduktion ----- */
+
+.intro {
+	@include span-columns(3);
+	@include shift(1); }

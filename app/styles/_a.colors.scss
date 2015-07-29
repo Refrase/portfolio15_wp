@@ -1,0 +1,10 @@
+/* ----- Colors ----- */
+
+$colr-a1: blue;
+$colr-a2: green;
+
+$colr-b1: #333;
+$colr-b2: #ccc;
+$colr-b3: #efefef;
+
+*, h1, h2, h3, h4, h5, h6, p, a, span { color: $colr-b1; }

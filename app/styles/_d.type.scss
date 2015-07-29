@@ -1,0 +1,18 @@
+/* ----- Typografi ----- */
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Roboto', sans-serif;
+	text-transform: uppercase;
+	line-height: $text-l; }
+
+p, a, span {
+	font-family: 'Dosis', sans-serif;
+	line-height: $text-l; }
+
+h1 { font-size: $text-xxl; }
+h2 { font-size: $text-xl; }
+h3 { font-size: $text-l; }
+h4 { font-size: $text-m; }
+h5, p { font-size: $text-s; }
+h6 { font-size: $text-xs; }
+

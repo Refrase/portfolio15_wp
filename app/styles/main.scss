@@ -1,0 +1,41 @@
+// bower:scss
+@import "bower_components/bourbon/app/assets/stylesheets/_bourbon.scss";
+@import "bower_components/neat/app/assets/stylesheets/_neat.scss";
+// endbower
+
+/* ----- Fonts ----- */
+@import url(http://fonts.googleapis.com/css?family=Dosis:400,600);
+@import url(http://fonts.googleapis.com/css?family=Roboto:900);
+
+/* ----- Partials ----- */
+
+// A - Settings: Variabler (Sass)
+@import "a.colors";
+@import "a.distances";
+@import "a.fontsizes";
+
+// B - Tools: Mixins + funktioner (Sass)
+
+// C - Generic: Resets + globale styles
+@import "c.resets";
+@import "c.globals";
+
+// D - Elements: Html-elementer u. classes
+@import "d.type";
+@import "d.lists";
+
+// E - Objects: Dele af siden
+@import "e.nav";
+@import "e.intro";
+
+// F - Components: Specifikke dele af elementer
+
+// G - Trumps: Clearfix o.l.
+
+/* ----- Main ----- */
+
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0; }
