@@ -1,11 +1,10 @@
+$fa-font-path: "fonts/fontawesome" !default;
+
 // bower:scss
 @import "bower_components/bourbon/app/assets/stylesheets/_bourbon.scss";
 @import "bower_components/neat/app/assets/stylesheets/_neat.scss";
+@import "bower_components/fontawesome/scss/font-awesome.scss";
 // endbower
-
-/* ----- Fonts ----- */
-@import url(http://fonts.googleapis.com/css?family=Dosis:400,600);
-@import url(http://fonts.googleapis.com/css?family=Roboto:900);
 
 /* ----- Partials ----- */
 
@@ -15,6 +14,7 @@
 @import "a.fontsizes";
 
 // B - Tools: Mixins + funktioner (Sass)
+@import "b.mixins";
 
 // C - Generic: Resets + globale styles
 @import "c.resets";
@@ -27,6 +27,7 @@
 // E - Objects: Dele af siden
 @import "e.nav";
 @import "e.intro";
+@import "e.me";
 
 // F - Components: Specifikke dele af elementer
 

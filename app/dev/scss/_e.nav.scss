@@ -1,27 +1,46 @@
 /* ----- Navigation ----- */
 
-$menu-height: 40px;
-
 .menu {
 	display: flex;
-	@include justify-content( space-between );
 	@include align-items( center );
-	background: $colr-b3;
+	border-bottom: 1px solid $colr-b3; }
+
+.menu--main {
+	@include justify-content( space-between );
 	padding: $dist-m;
 	padding-right: 0; }
 
-.menu img {
-	height: $menu-height;
+.menu--main img {
+	height: 40px;
 	margin-right: auto; }
 
-.menu li a {
+.menu--main li a {
 	border-left: 1px solid #fff;
 	padding: 26px; }
 
-.menu li a:hover { background: $colr-a1; color: $colr-b3; }
+.menu--main li a:hover {
+	background: $colr-a1;
+	color: $colr-b3; }
 
-.menu--thumbs {
-	position: absolute;
-	width: 100%;
-	margin-top: $menu-height;
-	display: none; }
+.menu--main__random {
+	cursor: pointer;
+	position: fixed;
+	display: flex;
+	@include align-items( center );
+	@include justify-content( center );
+	z-index: 100;
+	width: 84px;
+	height: 84px;
+	background: $colr-a1;
+	border-radius: 50%;
+	bottom: $dist-l;
+	right: $dist-l;
+	border-bottom: 3px solid $colr-a1-s1; }
+
+.menu--main__random:active {
+	border-bottom: none; }
+
+.menu--main__random i {
+	font-size: $text-l;
+	font-weight: 700;
+	color: #fff; }

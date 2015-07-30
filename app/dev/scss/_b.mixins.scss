@@ -1,0 +1,6 @@
+/* ----- Mixins ----- */
+
+@mixin pad-lef-rig( $dist ) {
+	padding-left: $dist;
+	padding-right: $dist;
+}

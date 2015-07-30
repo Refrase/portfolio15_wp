@@ -1,5 +1,17 @@
 /* ----- Introduktion ----- */
 
-.intro {
-	@include span-columns(3);
-	@include shift(1); }
+.menu--categ {
+	opacity: 0;
+	@include justify-content( center ); }
+
+.menu--categ li {
+	padding: $dist-xs;
+	@include pad-lef-rig( $dist-s );
+	padding-top: $dist-s;
+	border-bottom: $dist-xs solid rgba(0,0,0,0); }
+
+.menu--categ li:hover {
+	cursor: pointer;
+	border-bottom: $dist-xs solid $colr-a1; }
+
+.intro__tekst { @include span-columns(3); }

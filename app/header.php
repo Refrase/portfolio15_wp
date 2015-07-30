@@ -28,17 +28,5 @@
     <![endif]-->
 
     <header>
-      <nav>
-        <ul class="menu menu--main">
-          <img src="images/ic/initialer.svg"></li>
-          <li id="menuBtnPiece"><a href="">Show</a></li>
-          <li><a href="">Me</a></li>
-          <li><a href="themoney.php">The Money</a></li>
-        </ul>
-        <ul id="menuThumbs" class="menu menu--thumbs">
-          <li><img src="images/ic/initialer.svg"></li>
-          <li><img src="images/ic/initialer.svg"></li>
-          <li><img src="images/ic/initialer.svg"></li>
-        </ul>
-      </nav>
+      <?php include 'nav.php'; ?>
     </header>

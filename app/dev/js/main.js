@@ -1,21 +1,18 @@
 // jshint devel:true
 
-jQuery( document ).ready( function() {
+jQuery( document ).ready( function($) {
 
-	/* ----- Show thumb-menu hovering 'More' ----- */
-	$( '#menuBtnPiece' ).on( 'mouseenter', function() {
-		$( '.menu--thumbs' ).stop( true, true ).show({
-			effect: 'slide',
-			direction: 'up'
-		});
+	/* ----- Slide kategorier ind -----*/
+
+	$( '#menuCateg' ).hide();
+	$( '#menuCateg' ).css( 'opacity', 1 );
+	$( '#menuCateg' ).stop( true, true ).show({
+		effect: 'slide',
+		direction: 'up',
+		easing: 'easeOutExpo',
+		duration: 1600
 	});
 
-	$( '#menuThumbs' ).on( 'mouseleave', function() {
-		$( '.menu--thumbs' ).stop( true, true ).hide({
-			effect: 'slide',
-			direction: 'up'
-		});
-	});
-
+	/* ----- / -----*/
 
 });

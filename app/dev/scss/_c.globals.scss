@@ -1,5 +1,7 @@
 /* ----- Globals ----- */
 
-section { padding: $dist-xl; }
+section {
+	padding: $dist-xl;
+	@include pad-lef-rig( $dist-xxl ); }
 
 a { text-decoration: none; }
