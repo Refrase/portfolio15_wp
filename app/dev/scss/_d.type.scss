@@ -20,11 +20,11 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: 'League Gothic', sans-serif;
 	font-weight: 400;
 	text-transform: uppercase;
-	line-height: $text-l; }
+  line-height: 1em; }
 
 p, a, span, li {
 	font-family: 'Dosis', sans-serif;
-	line-height: $text-l; }
+	line-height: 1.4em; }
 
 h1 { font-size: $text-xxl; }
 h2 { font-size: $text-xl; }

@@ -1,7 +1,17 @@
 /* ----- Globals ----- */
 
 section {
-	padding: $dist-xl;
-	@include pad-lef-rig( $dist-xxl ); }
+	@include pad-top-bot( $dist-l );
+	@include pad-lef-rig( $dist-l );  }
 
 a { text-decoration: none; }
+
+
+// ----- MQ ----- //
+@media ( min-width: 660px ) {
+
+	section {
+		@include pad-top-bot( $dist-xl );
+		@include pad-lef-rig( $dist-xxl ); }
+
+}

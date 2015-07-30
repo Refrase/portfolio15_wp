@@ -1,6 +1,24 @@
 /* ----- Mixins ----- */
 
+@mixin pad-top-bot( $dist ) {
+	padding-top: $dist;
+	padding-bottom: $dist; }
+
 @mixin pad-lef-rig( $dist ) {
 	padding-left: $dist;
-	padding-right: $dist;
-}
+	padding-right: $dist; }
+
+@mixin mar-top-bot( $dist ) {
+	margin-top: $dist;
+	margin-bottom: $dist; }
+
+@mixin mar-lef-rig( $dist ) {
+	margin-left: $dist;
+	margin-right: $dist; }
+
+@mixin blur( $dist ) {
+	-webkit-filter: blur( $dist );
+  -moz-filter: blur( $dist );
+  -o-filter: blur( $dist );
+  -ms-filter: blur( $dist );
+  filter: blur( $dist ); }

@@ -1,0 +1,19 @@
+/* ----- Navigation: Categories ----- */
+
+.menu--categ {
+	opacity: 0;
+	@include justify-content( center ); }
+
+.menu--categ li {
+	padding: $dist-s;
+	@include pad-lef-rig( $dist-m );
+	transition: all 0.1s ease-in; }
+
+.menu--categ li:hover {
+	cursor: pointer;
+	background: $colr-b1;
+	color: #fff; }
+
+.menu--categ__random {
+	margin-left: $dist-m;
+	border-left: 1px solid $colr-b3; }

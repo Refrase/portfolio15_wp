@@ -1,4 +1,7 @@
 /* ----- Me ----- */
 
-.me__tekst {
-	@include span-columns(3); }
+.me__header {
+	margin-bottom: $dist-m; }
+
+.me__text {
+	@include span-columns(6); }

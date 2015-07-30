@@ -1,9 +1,11 @@
+      <!-- Menu: Main -->
       <nav>
         <ul class="menu menu--main">
-          <li class="menu--main__random"><i class="fa fa-random"></i></li>
           <img src="images/ic/initialer.svg">
           <li id="menuBtn1"><a href="index.php">Show</a></li>
-          <li><a href="me.php">Me</a></li>
-          <li><a href="themoney.php">The Money</a></li>
+          <li><a href="page-me.php">Me</a></li>
+          <li><a href="page-themoney.php">The Money</a></li>
         </ul>
+
+        <a href="page-web.php"><h2 class="menu--main__random">Random</h2></a>
       </nav>

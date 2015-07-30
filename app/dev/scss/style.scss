@@ -23,9 +23,11 @@ $fa-font-path: "fonts/fontawesome" !default;
 // D - Elements: Html-elementer u. classes
 @import "d.type";
 @import "d.lists";
+@import "d.grid";
 
 // E - Objects: Dele af siden
 @import "e.nav";
+@import "e.nav-categ";
 @import "e.intro";
 @import "e.me";
 
@@ -40,3 +42,8 @@ $fa-font-path: "fonts/fontawesome" !default;
   background: #ccc;
   color: #000;
   padding: 0.2em 0; }
+
+html {
+	background: $colr-b4;
+  overflow-x: hidden; }
+

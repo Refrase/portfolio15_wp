@@ -1,21 +1,16 @@
 <?php include 'header.php'; ?>
 
-    <ul id="menuCateg" class="menu menu--categ">
-      <li>Web</li>
-      <li>Infographics</li>
-      <li>Interaction</li>
-      <li>Motion</li>
-      <li>Visual Identity</li>
-      <li>Print</li>
-      <li>Textile</li>
-      <li>X</li>
-    </ul>
-
-    <section>
-      <article class="intro">
-        <h1>Se</h1>
-        <p class="intro__tekst">Man kan fremad se, at de har været udset til at læse, at der skal dannes par af ligheder. Dermed kan der afsluttes uden løse ender, og de kan optimeres fra oven af at formidles stort uden brug fra presse. I en kant af landet går der blandt om, at de vil sætte den over forbehold for tiden. Vi flotter med et hold, der vil rundt og se sig om i byen. Det gør heller ikke mere. Men hvor vi nu overbringer denne størrelse til det den handler om, så kan der fortælles op til 3 gange.</p>
-      </article>
+    <section class="piece-cats">
+      <a href="page-web.php"><h1 class="piece-cat">Web</h1></a>
+      <a href="page-infog.php"><h1 class="piece-cat">Infographics</h1></a>
+      <a href="page-intera.php"><h1 class="piece-cat">Interaction</h1></a>
+      <a href="page-motion.php"><h1 class="piece-cat">Motion</h1></a>
+      <a href="page-web.php"><h1 class="piece-cat">Visual Identity</h1></a>
+      <a href="page-infog.php"><h1 class="piece-cat">Print</h1></a>
+      <a href="page-intera.php"><h1 class="piece-cat">Textile</h1></a>
+      <a href="page-motion.php"><h1 class="piece-cat">X</h1></a>
     </section>
+
+    <div class="intro-bg"></div>
 
 <?php include 'footer.php'; ?>

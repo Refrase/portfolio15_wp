@@ -1,17 +1,28 @@
 /* ----- Introduktion ----- */
 
-.menu--categ {
-	opacity: 0;
-	@include justify-content( center ); }
+.intro-bg {
+	position: absolute;
+	z-index: -1;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: url( 'images/test.png' );
+	background-size: cover;
+	@include blur( 20px ); }
 
-.menu--categ li {
-	padding: $dist-xs;
-	@include pad-lef-rig( $dist-s );
-	padding-top: $dist-s;
-	border-bottom: $dist-xs solid rgba(0,0,0,0); }
+.piece-cats { // Counter c.globals style of section
+	@include pad-top-bot( 0 );
+	@include pad-lef-rig( 0 ); }
 
-.menu--categ li:hover {
-	cursor: pointer;
-	border-bottom: $dist-xs solid $colr-a1; }
+.piece-cat {
+	float: left;
+	background: #fff;
+	@include pad-top-bot( $dist-l );
+	@include pad-lef-rig( $dist-xl );
+	transition: all 0.2s ease-out; }
 
-.intro__tekst { @include span-columns(3); }
+.piece-cat:hover {
+	transform: scale( 1.02 );
+	box-shadow: 2px 2px 16px 1px rgba( 0,0,0,0.15 );
+	z-index: 10; }

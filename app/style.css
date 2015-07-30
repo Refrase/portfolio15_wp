@@ -2666,10 +2666,6 @@ html {
 /* ----- Type ----- */
 /* ----- Mixins ----- */
 /* ----- Resets ----- */
-html {
-  overflow-x: hidden;
-}
-
 * {
   padding: 0;
   margin: 0;
@@ -2677,13 +2673,23 @@ html {
 
 /* ----- Globals ----- */
 section {
-  padding: 64px;
-  padding-left: 128px;
-  padding-right: 128px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 32px;
+  padding-right: 32px;
 }
 
 a {
   text-decoration: none;
+}
+
+@media (min-width: 660px) {
+  section {
+    padding-top: 64px;
+    padding-bottom: 64px;
+    padding-left: 128px;
+    padding-right: 128px;
+  }
 }
 
 /* ----- Typografi ----- */
@@ -2699,12 +2705,12 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'League Gothic', sans-serif;
   font-weight: 400;
   text-transform: uppercase;
-  line-height: 1.5em;
+  line-height: 1em;
 }
 
 p, a, span, li {
   font-family: 'Dosis', sans-serif;
-  line-height: 1.5em;
+  line-height: 1.4em;
 }
 
 h1 {
@@ -2736,9 +2742,11 @@ ul {
   list-style: none;
 }
 
+/* ----- Grid ----- */
 /* ----- Navigation ----- */
 .menu {
   display: flex;
+  background: #fff;
   -webkit-box-align: center;
   -moz-box-align: center;
   box-align: center;
@@ -2771,58 +2779,32 @@ ul {
 }
 
 .menu--main li a {
-  border-left: 1px solid #fff;
+  border-left: 1px solid #efefef;
   padding: 26px;
 }
 
 .menu--main li a:hover {
-  background: #00cd7f;
+  background: #333;
   color: #efefef;
 }
 
 .menu--main__random {
-  cursor: pointer;
+  z-index: 1000;
   position: fixed;
-  display: flex;
-  -webkit-box-align: center;
-  -moz-box-align: center;
-  box-align: center;
-  -webkit-align-items: center;
-  -moz-align-items: center;
-  -ms-align-items: center;
-  -o-align-items: center;
-  align-items: center;
-  -ms-flex-align: center;
-  -webkit-box-pack: center;
-  -moz-box-pack: center;
-  box-pack: center;
-  -webkit-justify-content: center;
-  -moz-justify-content: center;
-  -ms-justify-content: center;
-  -o-justify-content: center;
-  justify-content: center;
-  -ms-flex-pack: center;
-  z-index: 100;
-  width: 84px;
-  height: 84px;
-  background: #00cd7f;
-  border-radius: 50%;
   bottom: 32px;
-  right: 32px;
-  border-bottom: 3px solid #00a767;
+  right: 0;
+  color: #fafafa;
+  text-align: center;
+  background: #333;
+  padding: 16px;
+  transition: padding-right 0.3s ease-out;
 }
 
-.menu--main__random:active {
-  border-bottom: none;
+.menu--main__random:hover {
+  padding-right: 32px;
 }
 
-.menu--main__random i {
-  font-size: 1.5em;
-  font-weight: 700;
-  color: #fff;
-}
-
-/* ----- Introduktion ----- */
+/* ----- Navigation: Categories ----- */
 .menu--categ {
   opacity: 0;
   -webkit-box-pack: center;
@@ -2837,38 +2819,76 @@ ul {
 }
 
 .menu--categ li {
-  padding: 4px;
-  padding-left: 8px;
-  padding-right: 8px;
-  padding-top: 8px;
-  border-bottom: 4px solid transparent;
+  padding: 8px;
+  padding-left: 16px;
+  padding-right: 16px;
+  transition: all 0.1s ease-in;
 }
 
 .menu--categ li:hover {
   cursor: pointer;
-  border-bottom: 4px solid #00cd7f;
+  background: #333;
+  color: #fff;
 }
 
-.intro__tekst {
+.menu--categ__random {
+  margin-left: 16px;
+  border-left: 1px solid #efefef;
+}
+
+/* ----- Introduktion ----- */
+.intro-bg {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: url("images/test.png");
+  background-size: cover;
+  -webkit-filter: blur(20px);
+  -moz-filter: blur(20px);
+  -o-filter: blur(20px);
+  -ms-filter: blur(20px);
+  filter: blur(20px);
+}
+
+.piece-cats {
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.piece-cat {
   float: left;
-  display: block;
-  margin-right: 2.3576515979%;
-  width: 23.2317613015%;
+  background: #fff;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 64px;
+  padding-right: 64px;
+  transition: all 0.2s ease-out;
 }
 
-.intro__tekst:last-child {
-  margin-right: 0;
+.piece-cat:hover {
+  transform: scale(1.02);
+  box-shadow: 2px 2px 16px 1px rgba(0, 0, 0, 0.15);
+  z-index: 10;
 }
 
 /* ----- Me ----- */
-.me__tekst {
+.me__header {
+  margin-bottom: 16px;
+}
+
+.me__text {
   float: left;
   display: block;
   margin-right: 2.3576515979%;
-  width: 23.2317613015%;
+  width: 48.821174201%;
 }
 
-.me__tekst:last-child {
+.me__text:last-child {
   margin-right: 0;
 }
 
@@ -2878,4 +2898,9 @@ ul {
   background: #ccc;
   color: #000;
   padding: 0.2em 0;
+}
+
+html {
+  background: #fafafa;
+  overflow-x: hidden;
 }

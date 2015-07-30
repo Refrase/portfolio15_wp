@@ -2,6 +2,7 @@
 
 .menu {
 	display: flex;
+	background: #fff;
 	@include align-items( center );
 	border-bottom: 1px solid $colr-b3; }
 
@@ -15,32 +16,22 @@
 	margin-right: auto; }
 
 .menu--main li a {
-	border-left: 1px solid #fff;
+	border-left: 1px solid $colr-b3;
 	padding: 26px; }
 
 .menu--main li a:hover {
-	background: $colr-a1;
+	background: $colr-b1;
 	color: $colr-b3; }
 
 .menu--main__random {
-	cursor: pointer;
+	z-index: 1000;
 	position: fixed;
-	display: flex;
-	@include align-items( center );
-	@include justify-content( center );
-	z-index: 100;
-	width: 84px;
-	height: 84px;
-	background: $colr-a1;
-	border-radius: 50%;
 	bottom: $dist-l;
-	right: $dist-l;
-	border-bottom: 3px solid $colr-a1-s1; }
+	right: 0;
+	color: $colr-b4;
+	text-align: center;
+	background: $colr-b1;
+	padding: $dist-m;
+	transition: padding-right 0.3s ease-out; }
 
-.menu--main__random:active {
-	border-bottom: none; }
-
-.menu--main__random i {
-	font-size: $text-l;
-	font-weight: 700;
-	color: #fff; }
+.menu--main__random:hover { padding-right: $dist-l; }
