@@ -1,0 +1,27 @@
+/* ----- Navigation ----- */
+
+$menu-height: 40px;
+
+.menu {
+	display: flex;
+	@include justify-content( space-between );
+	@include align-items( center );
+	background: $colr-b3;
+	padding: $dist-m;
+	padding-right: 0; }
+
+.menu img {
+	height: $menu-height;
+	margin-right: auto; }
+
+.menu li a {
+	border-left: 1px solid #fff;
+	padding: 26px; }
+
+.menu li a:hover { background: $colr-a1; color: $colr-b3; }
+
+.menu--thumbs {
+	position: absolute;
+	width: 100%;
+	margin-top: $menu-height;
+	display: none; }
