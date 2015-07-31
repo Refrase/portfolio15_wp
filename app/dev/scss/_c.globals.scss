@@ -2,7 +2,7 @@
 
 section {
 	@include pad-top-bot( $dist-l );
-	@include pad-lef-rig( $dist-l );  }
+	@include pad-lef-rig( $dist-l - $dist-m );  }
 
 a { text-decoration: none; }
 

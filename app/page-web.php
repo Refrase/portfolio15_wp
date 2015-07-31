@@ -1,7 +1,7 @@
 <?php include 'header.php'; ?>
 <?php include 'nav-categ.php'; ?>
 
-	<section>
+	<section class="cards">
 		<article class="card card--web">
 			<div class="card__image"></div>
 			<div class="card__meta-wrap">
@@ -14,7 +14,7 @@
 			<div class="card__image"></div>
 			<div class="card__meta-wrap">
 			<h2>Test</h2>
-			<p>Introduktion af projektet i kort form, så man kan trykke sig videre ind og så faktisk se projektet på næste side.</p>
+			<p>Introduktion af projektet i kort form, så man kan trykke sig videre ind og så faktisk se projektet på næste side. Introduktion af projektet i kort form, så man kan trykke sig videre ind og så faktisk se projektet på næste side. Introduktion af projektet i kort form, så man kan trykke sig videre ind og så faktisk se projektet på næste side.</p>
 			</div>
 		</article>
 
@@ -22,7 +22,7 @@
 			<div class="card__image"></div>
 			<div class="card__meta-wrap">
 			<h2>Test</h2>
-			<p>Introduktion af projektet i kort form, så man kan trykke sig videre ind og så faktisk se projektet på næste side.</p>
+			<p>Introduktion af projektet i kort form. Introduktion af projektet i kort form, så man kan trykke sig videre ind og så faktisk se projektet på næste side.</p>
 			</div>
 		</article>
 
@@ -30,7 +30,7 @@
 			<div class="card__image"></div>
 			<div class="card__meta-wrap">
 			<h2>Test</h2>
-			<p>Introduktion af projektet i kort form, så man kan trykke sig videre ind og så faktisk se projektet på næste side.</p>
+			<p>Introduktion af projektet i kort form, så man kan trykke sig videre ind og så faktisk se projektet på næste side. Introduktion af projektet i kort form, så man kan trykke sig videre ind og så faktisk se projektet på næste side.</p>
 			</div>
 		</article>
 	</section>

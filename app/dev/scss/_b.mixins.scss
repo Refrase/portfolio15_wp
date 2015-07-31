@@ -22,3 +22,8 @@
   -o-filter: blur( $dist );
   -ms-filter: blur( $dist );
   filter: blur( $dist ); }
+
+@mixin column-break-inside( $arg ) {
+	-webkit-column-break-inside: $arg;
+  page-break-inside: $arg;
+  break-inside: $arg; }

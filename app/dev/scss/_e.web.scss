@@ -2,16 +2,27 @@
 
 $card-bord-rad: 2px;
 
+.cards {
+  @include column-gap( 0 );
+  @include column-count( 1 ); }
+
 .card {
+	display: inline-block;
 	position: relative;
-	@include span-columns( 12 );
+	@include mar-lef-rig( $dist-m );
 	margin-bottom: $dist-l;
 	padding: $dist-l;
 	background: #fff;
 	border-radius: $card-bord-rad;
-	border: 1px solid $colr-b3; }
+	border: 1px solid $colr-b3;
+	@include column-break-inside( avoid );
+	transition: all 0.2s ease-out; }
 
 .card h2 { margin-bottom: $dist-s; }
+
+.card:hover {
+	cursor: pointer;
+	box-shadow: 2px 2px 16px 1px rgba( 0,0,0,0.15 ); }
 
 $image-height: 200px;
 
@@ -23,31 +34,25 @@ $image-height: 200px;
 	top: 0;
 	width: 100%;
 	height: $image-height;
-	@include border-top-radius( $card-bord-rad ) }
+	@include border-top-radius( $card-bord-rad ); }
 
 .card__meta-wrap { margin-top: $image-height; }
 
 // ----- MQ ----- //
 @media ( min-width: $section-bp1 ) and ( max-width: 1201px ) { // Sat i _c.globals.scss
 
-	.card {
-		@include span-columns( 6 );
-		@include omega( 2n ); }
+	.cards { @include column-count( 2 ); }
 
 }
 
 @media ( min-width: 1201px ) and ( max-width: 1481px ) {
 
-	.card {
-		@include span-columns( 4 );
-		@include omega( 3n ); }
+	.cards { @include column-count( 3 ); }
 
 }
 
 @media ( min-width: 1481px ) {
 
-	.card {
-		@include span-columns( 3 );
-		@include omega( 4n ); }
+	.cards { @include column-count( 4 ); }
 
 }

@@ -2675,8 +2675,8 @@ html {
 section {
   padding-top: 32px;
   padding-bottom: 32px;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 a {
@@ -2899,25 +2899,38 @@ ul {
 }
 
 /* ----- Web ----- */
+.cards {
+  -webkit-column-gap: 0;
+  -moz-column-gap: 0;
+  column-gap: 0;
+  -webkit-column-count: 1;
+  -moz-column-count: 1;
+  column-count: 1;
+}
+
 .card {
+  display: inline-block;
   position: relative;
-  float: left;
-  display: block;
-  margin-right: 2.3576515979%;
-  width: 100%;
+  margin-left: 16px;
+  margin-right: 16px;
   margin-bottom: 32px;
   padding: 32px;
   background: #fff;
   border-radius: 2px;
   border: 1px solid #efefef;
-}
-
-.card:last-child {
-  margin-right: 0;
+  -webkit-column-break-inside: avoid;
+  page-break-inside: avoid;
+  break-inside: avoid;
+  transition: all 0.2s ease-out;
 }
 
 .card h2 {
   margin-bottom: 8px;
+}
+
+.card:hover {
+  cursor: pointer;
+  box-shadow: 2px 2px 16px 1px rgba(0, 0, 0, 0.15);
 }
 
 .card__image {
@@ -2937,56 +2950,26 @@ ul {
 }
 
 @media (min-width: 660px) and (max-width: 1201px) {
-  .card {
-    float: left;
-    display: block;
-    margin-right: 2.3576515979%;
-    width: 48.821174201%;
-  }
-  .card:last-child {
-    margin-right: 0;
-  }
-  .card:nth-child(2n) {
-    margin-right: 0;
-  }
-  .card:nth-child(2n+1) {
-    clear: left;
+  .cards {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
   }
 }
 
 @media (min-width: 1201px) and (max-width: 1481px) {
-  .card {
-    float: left;
-    display: block;
-    margin-right: 2.3576515979%;
-    width: 31.7615656014%;
-  }
-  .card:last-child {
-    margin-right: 0;
-  }
-  .card:nth-child(3n) {
-    margin-right: 0;
-  }
-  .card:nth-child(3n+1) {
-    clear: left;
+  .cards {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
   }
 }
 
 @media (min-width: 1481px) {
-  .card {
-    float: left;
-    display: block;
-    margin-right: 2.3576515979%;
-    width: 23.2317613015%;
-  }
-  .card:last-child {
-    margin-right: 0;
-  }
-  .card:nth-child(4n) {
-    margin-right: 0;
-  }
-  .card:nth-child(4n+1) {
-    clear: left;
+  .cards {
+    -webkit-column-count: 4;
+    -moz-column-count: 4;
+    column-count: 4;
   }
 }
 
