@@ -1,9 +1,9 @@
 /* ----- Navigation ----- */
 
 .menu {
-	display: flex;
-	background: #fff;
+	@include display( flex );
 	@include align-items( center );
+	background: #fff;
 	border-bottom: 1px solid $colr-b3; }
 
 .menu--main {

@@ -26,11 +26,12 @@ $fa-font-path: "fonts/fontawesome" !default;
 @import "d.grid";
 
 // E - Objects: Dele af siden
-@import "e.nav";
-@import "e.nav-categ";
-@import "e.intro";
-@import "e.web";
-@import "e.me";
+@import "e.nav"; // Menu: Main
+@import "e.nav-categ"; // Menu: Kategorier
+@import "e.index"; // 'Vælg kategori'-startside
+@import "e.archive"; // Portfolio
+@import "e.single"; // Portfolio værker
+@import "e.page"; // Me + The Money
 
 // F - Components: Specifikke dele af elementer
 

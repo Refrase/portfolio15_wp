@@ -1,0 +1,37 @@
+/* ----- Piece ----- */
+
+.breadc {
+	color: $colr-b2;
+	margin-bottom: $dist-l; }
+
+.piece > .piece__text { width: $colw-6; }
+
+.piece__date {
+	font-size: $text-xs;
+	color: $colr-b2;
+	margin-bottom: $dist-m; }
+
+.piece__ext-link { color: $colr-a1; }
+.piece__ext-link:hover { color: $colr-a1-s1; }
+.piece__ext-link:visited { color: $colr-a2; }
+.piece__ext-link:visited:hover { color: $colr-a1; }
+
+.piece__tools {
+	@include display( flex );
+	@include align-items( center );
+	margin-bottom: $dist-xl; }
+
+.piece__tools-ic {
+	color: $colr-b2;
+	padding-right: $dist-m;
+	margin-right: $dist-m;
+	border-right: 1px solid $colr-b2; }
+
+.piece__pic-infog--big {
+	float: left;
+	width: 60%;
+	margin-right: $dist-l; }
+
+.piece__pic-infog--small {
+	width: 30%; }
+

@@ -6,6 +6,7 @@
 
 .menu--categ li {
 	padding: $dist-s;
+	border-bottom: 1px solid rgba( 0,0,0,0 );
 	@include pad-lef-rig( $dist-m );
 	transition: all 0.1s ease-in; }
 
@@ -14,7 +15,7 @@
 	background: $colr-b1;
 	color: #fff; }
 
-.menu--categ__item-active {
+li.menu--categ__item-active {
 	border-bottom: 1px solid $colr-b1; }
 
 .menu--categ__random {

@@ -1,4 +1,4 @@
-/* ----- Web ----- */
+/* ----- Portfolio ----- */
 
 $card-bord-rad: 2px;
 
@@ -39,6 +39,13 @@ $image-height: 200px;
 .card__meta-wrap { margin-top: $image-height; }
 
 // ----- MQ ----- //
+
+@media ( max-width: $section-bp1 ) {
+
+	.cards { @include pad-lef-rig( $dist-l - $dist-m ); }
+
+}
+
 @media ( min-width: $section-bp1 ) and ( max-width: 1201px ) { // Sat i _c.globals.scss
 
 	.cards { @include column-count( 2 ); }

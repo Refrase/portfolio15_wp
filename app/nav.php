@@ -7,5 +7,5 @@
           <li><a href="page-themoney.php">The Money</a></li>
         </ul>
 
-        <a href="page-web.php"><h2 class="menu--main__random">Random</h2></a>
+        <a href="archive.php"><h2 class="menu--main__random">Random</h2></a>
       </nav>

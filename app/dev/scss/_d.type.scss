@@ -22,14 +22,23 @@ h1, h2, h3, h4, h5, h6 {
 	text-transform: uppercase;
   line-height: 1em; }
 
-p, a, span, li {
-	font-family: 'Dosis', sans-serif;
-	line-height: 1.4em; }
-
 h1 { font-size: $text-xxl; }
 h2 { font-size: $text-xl; }
 h3 { font-size: $text-l; }
 h4 { font-size: $text-m; }
-h5, p { font-size: $text-s; }
+h5 { font-size: $text-s; }
 h6 { font-size: $text-xs; }
+
+p, a, span, li {
+	font-family: 'Dosis', sans-serif;
+  font-size: $text-s;
+	line-height: 1.4em; }
+
+
+// ----- MQ ----- //
+@media ( max-width: $section-bp1 ) {
+
+  h1 { font-size: 3.5em; }
+
+}
 
