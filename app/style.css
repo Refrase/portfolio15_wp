@@ -2861,12 +2861,13 @@ ul {
 }
 
 .piece-cat {
+  font-size: 3.5em;
   float: left;
   background: #fff;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  padding-left: 64px;
-  padding-right: 64px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  padding-left: 40px;
+  padding-right: 40px;
   transition: all 0.2s ease-out;
 }
 
@@ -2874,6 +2875,16 @@ ul {
   transform: scale(1.02);
   box-shadow: 2px 2px 16px 1px rgba(0, 0, 0, 0.15);
   z-index: 10;
+}
+
+@media (min-width: 696px) {
+  .piece-cat {
+    font-size: 4.5em;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-left: 64px;
+    padding-right: 64px;
+  }
 }
 
 /* ----- Me ----- */

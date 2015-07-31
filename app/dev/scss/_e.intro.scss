@@ -16,13 +16,24 @@
 	@include pad-lef-rig( 0 ); }
 
 .piece-cat {
+	font-size: 3.5em;
 	float: left;
 	background: #fff;
-	@include pad-top-bot( $dist-l );
-	@include pad-lef-rig( $dist-xl );
+	@include pad-top-bot( $dist-m + $dist-s );
+	@include pad-lef-rig( $dist-l + $dist-s );
 	transition: all 0.2s ease-out; }
 
 .piece-cat:hover {
 	transform: scale( 1.02 );
 	box-shadow: 2px 2px 16px 1px rgba( 0,0,0,0.15 );
 	z-index: 10; }
+
+// ----- MQ ----- //
+@media ( min-width: 696px ) {
+
+	.piece-cat {
+		font-size: $text-xxl;
+		@include pad-top-bot( $dist-l );
+		@include pad-lef-rig( $dist-xl ); }
+
+}
