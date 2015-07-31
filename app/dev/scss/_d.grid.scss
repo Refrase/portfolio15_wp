@@ -1,6 +1,7 @@
 /* ----- Grid ----- */
 
-$col-3: calc( 25% - 24px ); // 96px for meget (marginer) delt i 4
-$col-4: calc( 33.33333333% - 21.33333333px ); // 64px for meget (marginer) delt i 3
-$col-6: calc( 50% - 16px );
-$col-12: 100%;
+$colw-3: calc( 25% - 24px ); // 96px for meget (marginer) delt i 4
+$colw-4: calc( 33.33333333% - 21.33333333px ); // 64px for meget (marginer) delt i 3
+$colw-6: calc( 50% - 16px );
+$colw-10: calc( 80% - 32px );
+$colw-12: calc( 100% - 32px );

@@ -1,1 +1,53 @@
 /* ----- Web ----- */
+
+$card-bord-rad: 2px;
+
+.card {
+	position: relative;
+	@include span-columns( 12 );
+	margin-bottom: $dist-l;
+	padding: $dist-l;
+	background: #fff;
+	border-radius: $card-bord-rad;
+	border: 1px solid $colr-b3; }
+
+.card h2 { margin-bottom: $dist-s; }
+
+$image-height: 200px;
+
+.card__image {
+	background: url( 'images/test.png' );
+	background-size: cover;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: $image-height;
+	@include border-top-radius( $card-bord-rad ) }
+
+.card__meta-wrap { margin-top: $image-height; }
+
+// ----- MQ ----- //
+@media ( min-width: $section-bp1 ) and ( max-width: 1201px ) { // Sat i _c.globals.scss
+
+	.card {
+		@include span-columns( 6 );
+		@include omega( 2n ); }
+
+}
+
+@media ( min-width: 1201px ) and ( max-width: 1481px ) {
+
+	.card {
+		@include span-columns( 4 );
+		@include omega( 3n ); }
+
+}
+
+@media ( min-width: 1481px ) {
+
+	.card {
+		@include span-columns( 3 );
+		@include omega( 4n ); }
+
+}

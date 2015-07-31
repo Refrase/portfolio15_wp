@@ -8,10 +8,19 @@ a { text-decoration: none; }
 
 
 // ----- MQ ----- //
-@media ( min-width: 660px ) {
+$section-bp1: 660px;
+$section-bp2: 960px;
+
+@media ( min-width: $section-bp1 ) {
 
 	section {
 		@include pad-top-bot( $dist-xl );
-		@include pad-lef-rig( $dist-xxl ); }
+		@include pad-lef-rig( $dist-xl ); }
+
+}
+
+@media ( min-width: $section-bp2 ) {
+
+	section { @include pad-lef-rig( $dist-xxl ); }
 
 }
