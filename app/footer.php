@@ -4,6 +4,7 @@
     <script src="../bower_components/jquery/dist/jquery.js"></script>
     <script src="../bower_components/jquery-ui/jquery-ui.js"></script>
     <script src="../bower_components/isotope/dist/isotope.pkgd.min.js"></script>
+    <script src="../bower_components/jquery-mousewheel/jquery.mousewheel.min.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 

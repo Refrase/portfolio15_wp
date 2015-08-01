@@ -2,6 +2,24 @@
 
 jQuery( document ).ready( function($) {
 
+	/* ----- Mousewheel horizontal scroll when hovering specified elem -----*/
+	var enableHorizontalScroll = function() {
+		$( '.menu--categ' ).mousewheel(function(event, delta) {
+		  this.scrollLeft -= (delta * 5); // Speed
+		  event.preventDefault();
+		});
+	};
+
+	// Brug kun, hvis vinduet er så smalt at menuen ikke kan være
+	if ( $( window ).width() < 660 ) { enableHorizontalScroll(); };
+	// ... og hvis vinduet gøres smallere efter load
+	$( window ).on( 'resize', function() {
+		if ( $( window ).width() < 660 ) {
+			enableHorizontalScroll();
+		}
+	});
+	/* ----- / -----*/
+
 	/* ----- Slide kategorier ind -----*/
 	$( '#menuCateg' ).hide();
 	$( '#menuCateg' ).css( 'opacity', 1 );

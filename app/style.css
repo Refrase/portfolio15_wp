@@ -1,21 +1,11 @@
 @charset "UTF-8";
-@import url(http://fonts.googleapis.com/css?family=Dosis:400,600);
-html {
-  box-sizing: border-box;
-}
-
-*,
-*::after,
-*::before {
-  box-sizing: inherit;
-}
-
 /*!
  *  Font Awesome 4.4.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
  */
 /* FONT PATH
  * -------------------------- */
+@import url(http://fonts.googleapis.com/css?family=Dosis:400,600);
 @font-face {
   font-family: 'FontAwesome';
   src: url("fonts/fontawesome/fontawesome-webfont.eot?v=4.4.0");
@@ -2683,19 +2673,35 @@ a {
   text-decoration: none;
 }
 
+::-webkit-scrollbar {
+  width: 6px;
+  height: 1px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #333;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #fafafa;
+}
+
+body {
+  scrollbar-face-color: #fafafa;
+}
+
 @media (min-width: 660px) {
   section {
-    padding-top: 64px;
-    padding-bottom: 64px;
+    padding-top: 48px;
+    padding-bottom: 48px;
     padding-left: 64px;
     padding-right: 64px;
   }
 }
 
-@media (min-width: 960px) {
+@media (min-width: 769px) {
   section {
-    padding-left: 128px;
-    padding-right: 128px;
+    margin-left: 120px;
   }
 }
 
@@ -2824,23 +2830,74 @@ ul {
   padding-right: 32px;
 }
 
+@media (min-width: 769px) {
+  .menu--main {
+    position: fixed;
+    -webkit-box-pack: start;
+    -moz-box-pack: start;
+    box-pack: start;
+    -webkit-justify-content: flex-start;
+    -moz-justify-content: flex-start;
+    -ms-justify-content: flex-start;
+    -o-justify-content: flex-start;
+    justify-content: flex-start;
+    -ms-flex-pack: start;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    box-orient: vertical;
+    -webkit-box-direction: normal;
+    -moz-box-direction: normal;
+    box-direction: normal;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-direction: column;
+    -webkit-box-align: end;
+    -moz-box-align: end;
+    box-align: end;
+    -webkit-align-items: flex-end;
+    -moz-align-items: flex-end;
+    -ms-align-items: flex-end;
+    -o-align-items: flex-end;
+    align-items: flex-end;
+    -ms-flex-align: end;
+    height: 100%;
+    width: 120px;
+    padding: 0;
+    margin-right: 32px;
+    border-right: 1px solid #efefef;
+  }
+  .menu--main img {
+    height: 56px;
+    padding: 16px;
+    margin-right: 0;
+  }
+  .menu--main li a {
+    display: block;
+    width: 80px;
+    border-left: none;
+    border-top: 1px solid #efefef;
+    text-align: right;
+  }
+}
+
 /* ----- Navigation: Categories ----- */
 .menu--categ {
   opacity: 0;
-  -webkit-box-pack: center;
-  -moz-box-pack: center;
-  box-pack: center;
-  -webkit-justify-content: center;
-  -moz-justify-content: center;
-  -ms-justify-content: center;
-  -o-justify-content: center;
-  justify-content: center;
-  -ms-flex-pack: center;
+  overflow-x: auto;
+  -webkit-box-pack: start;
+  -moz-box-pack: start;
+  box-pack: start;
+  -webkit-justify-content: flex-start;
+  -moz-justify-content: flex-start;
+  -ms-justify-content: flex-start;
+  -o-justify-content: flex-start;
+  justify-content: flex-start;
+  -ms-flex-pack: start;
 }
 
 .menu--categ li {
   padding: 8px;
-  border-bottom: 1px solid transparent;
   padding-left: 16px;
   padding-right: 16px;
   transition: all 0.1s ease-in;
@@ -2853,12 +2910,32 @@ ul {
 }
 
 li.menu--categ__item-active {
-  border-bottom: 1px solid #333;
+  font-weight: 700;
 }
 
 .menu--categ__random {
   margin-left: 16px;
   border-left: 1px solid #efefef;
+}
+
+@media (min-width: 660px) {
+  .menu--categ {
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    box-pack: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    -o-justify-content: center;
+    justify-content: center;
+    -ms-flex-pack: center;
+  }
+}
+
+@media (min-width: 769px) {
+  .menu--categ {
+    margin-left: 121px;
+  }
 }
 
 /* ----- Introduktion ----- */
@@ -3080,4 +3157,8 @@ li.menu--categ__item-active {
 html {
   background: #fafafa;
   overflow-x: hidden;
+}
+
+body {
+  height: 100%;
 }

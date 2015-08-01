@@ -2,11 +2,11 @@
 
 .menu--categ {
 	opacity: 0;
-	@include justify-content( center ); }
+	overflow-x: auto;
+	@include justify-content( flex-start ); }
 
 .menu--categ li {
 	padding: $dist-s;
-	border-bottom: 1px solid rgba( 0,0,0,0 );
 	@include pad-lef-rig( $dist-m );
 	transition: all 0.1s ease-in; }
 
@@ -15,9 +15,21 @@
 	background: $colr-b1;
 	color: #fff; }
 
-li.menu--categ__item-active {
-	border-bottom: 1px solid $colr-b1; }
+li.menu--categ__item-active { font-weight: 700; }
 
 .menu--categ__random {
 	margin-left: $dist-m;
 	border-left: 1px solid $colr-b3; }
+
+// ----- MQ ----- //
+@media ( min-width: 660px ) {
+
+		.menu--categ { @include justify-content( center ); }
+
+}
+
+@media ( min-width: 769px ) {
+
+		.menu--categ { margin-left: 121px; }
+
+}

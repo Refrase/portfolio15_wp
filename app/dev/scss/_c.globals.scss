@@ -6,21 +6,27 @@ section {
 
 a { text-decoration: none; }
 
+// Scrollbars
+::-webkit-scrollbar {
+  width: 6px;
+  height: 1px; }
+::-webkit-scrollbar-thumb { background-color: $colr-b1; }
+::-webkit-scrollbar-track { background-color: $colr-b4; }
+body { scrollbar-face-color: $colr-b4; } // IE
 
 // ----- MQ ----- //
 $section-bp1: 660px;
-$section-bp2: 960px;
 
 @media ( min-width: $section-bp1 ) {
 
 	section {
-		@include pad-top-bot( $dist-xl );
+		@include pad-top-bot( $dist-xl - $dist-m );
 		@include pad-lef-rig( $dist-xl ); }
 
 }
 
-@media ( min-width: $section-bp2 ) {
+@media ( min-width: 769px ) {
 
-	section { @include pad-lef-rig( $dist-xxl ); }
+		section { margin-left: 120px; }
 
 }
