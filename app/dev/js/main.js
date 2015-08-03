@@ -5,7 +5,7 @@ jQuery( document ).ready( function($) {
 	/* ----- Mousewheel horizontal scroll when hovering specified elem -----*/
 	var enableHorizontalScroll = function() {
 		$( '.menu--categ' ).mousewheel(function(event, delta) {
-		  this.scrollLeft -= (delta * 5); // Speed
+		  this.scrollLeft -= (delta * 2); // Speed
 		  event.preventDefault();
 		});
 	};
