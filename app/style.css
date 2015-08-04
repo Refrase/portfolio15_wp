@@ -3086,6 +3086,9 @@ li.menu--categ__item-active {
 
 .piece__ext-link {
   color: #00cd7f;
+  margin-bottom: 16px;
+  display: block;
+  margin-bottom: 32px;
 }
 
 .piece__ext-link:hover {
@@ -3098,6 +3101,14 @@ li.menu--categ__item-active {
 
 .piece__ext-link:visited:hover {
   color: #333;
+}
+
+.piece__splitter {
+  margin-bottom: 16px;
+}
+
+.piece__pic {
+  margin-bottom: 32px;
 }
 
 .piece__tools {
@@ -3117,7 +3128,11 @@ li.menu--categ__item-active {
   -o-align-items: center;
   align-items: center;
   -ms-flex-align: center;
+  padding-top: 32px;
   margin-bottom: 32px;
+  border-top: 1px solid #ccc;
+  color: #ccc;
+  clear: both;
 }
 
 .piece__tools-ic {
@@ -3127,16 +3142,30 @@ li.menu--categ__item-active {
   border-right: 1px solid #ccc;
 }
 
+@media (min-width: 769px) {
+  .piece > .piece__text {
+    width: calc( 50% - 16px);
+  }
+  .piece__ext-link {
+    margin-bottom: 64px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .piece > .piece__text {
+    width: calc( 33.33333333% - 21.33333333px);
+  }
+}
+
+/* ----- Piece: Infographics ----- */
 .piece__pic-infog--big {
   width: 100%;
-  margin-bottom: 32px;
 }
 
 .piece__pic-infog--small {
   clear: left;
   width: 300px;
   margin: 0 auto;
-  margin-bottom: 32px;
 }
 
 .piece__pic-infog--big li img,
@@ -3145,12 +3174,6 @@ li.menu--categ__item-active {
 }
 
 @media (min-width: 769px) {
-  .piece > .piece__text {
-    width: calc( 50% - 16px);
-  }
-  .piece__tools {
-    margin-bottom: 64px;
-  }
   .piece__pic-infog--big {
     float: left;
     width: 65.12605042016807%;
@@ -3163,9 +3186,43 @@ li.menu--categ__item-active {
   }
 }
 
-@media (min-width: 1200px) {
-  .piece > .piece__text {
-    width: calc( 33.33333333% - 21.33333333px);
+/* ----- Piece: Web ----- */
+.piece__pic-web--big {
+  width: 100%;
+}
+
+.piece__pic-web--medium {
+  clear: left;
+  width: 70%;
+}
+
+.piece__pic-web--small {
+  clear: left;
+  width: 30%;
+}
+
+.piece__pic-web--big li img,
+.piece__pic-web--medium li img,
+.piece__pic-web--small li img {
+  width: 100%;
+}
+
+@media (min-width: 769px) {
+  .piece__pic-web--big {
+    float: left;
+    width: 68%;
+    margin-right: 2%;
+  }
+  .piece__pic-web--medium {
+    clear: none;
+    float: left;
+    width: 19%;
+    margin-right: 2%;
+  }
+  .piece__pic-web--small {
+    clear: none;
+    float: left;
+    width: 9%;
   }
 }
 
@@ -3175,7 +3232,7 @@ li.menu--categ__item-active {
 }
 
 .text {
-  margin-bottom: 16px;
+  margin-bottom: 8px;
   width: calc( 33.33333333% - 21.33333333px);
 }
 
