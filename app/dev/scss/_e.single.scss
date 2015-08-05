@@ -6,23 +6,27 @@
 
 .piece > .piece__text {
 	width: $colw-10;
-	margin-right: 0; }
+	margin-right: 0;
+	margin-bottom: $dist-l; }
 
 .piece__date {
 	font-size: $text-xs;
 	color: $colr-b2;
-	margin-bottom: $dist-m; }
+	margin-bottom: $dist-m;
+	margin-top: -$dist-m; }
 
 .piece__ext-link {
 	color: $colr-a1;
-	margin-bottom: $dist-m;
-	display: block;
-	margin-bottom: $dist-l;  }
+	margin-bottom: $dist-l;
+	display: block; }
 .piece__ext-link:hover { color: $colr-a1-s1; }
 .piece__ext-link:visited { color: $colr-a2; }
 .piece__ext-link:visited:hover { color: $colr-b1; }
 
-.piece__splitter { margin-bottom: $dist-m; }
+.piece__splitter {
+	clear: both;
+	color: $colr-b2;
+	margin-bottom: $dist-m; }
 
 .piece__pic { margin-bottom: $dist-l; }
 
@@ -30,9 +34,9 @@
 	@include display( flex );
 	@include align-items( center );
 	// @include justify-content( center );
-	padding-top: $dist-l;
-	margin-bottom: $dist-l;
-	border-top: 1px solid $colr-b2;
+	// padding-top: $dist-l;
+	margin-bottom: $dist-xxl;
+	// border-top: 1px solid $colr-b2;
 	color: $colr-b2;
 	clear: both; }
 
@@ -47,7 +51,7 @@
 
 	.piece > .piece__text { width: $colw-6; }
 
-	.piece__ext-link {	margin-bottom: $dist-xl; }
+	.piece__ext-link {	margin-bottom: $dist-l; }
 
 }
 

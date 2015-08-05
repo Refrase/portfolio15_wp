@@ -10,6 +10,21 @@
         <h1>Skills</h1>
         <p>Infographic over skill-niveauer i Adobe-pakke, kodesprog osv.</p>
       </article>
+
+      <ul>
+        <li>Adobe Illustrator: *****</li>
+        <li>Adobe After Effects: ****</li>
+        <li>Adobe Photoshop: ***</li>
+        <li>Adobe InDesign: **</li>
+        <li>Cinema 4D: **</li>
+        <li>HTML: ****</li>
+        <li>CSS: ****</li>
+        <li>JavaScript: ***</li>
+        <li>PHP: **</li>
+        <li>WordPress: **</li>
+        <li>Pixate: ***</li>
+        <li>InVision: ****</li>
+      </ul>
     </section>
 
 <?php include 'footer.php'; ?>

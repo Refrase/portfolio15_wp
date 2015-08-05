@@ -1,31 +1,30 @@
 /* ----- Piece: Infographics ----- */
 
+.piece__pic-infog--small {
+	clear: left;
+	width: 300px; }
+
 .piece__pic-infog--big {
 	width: 100%; }
 
-.piece__pic-infog--small {
-	clear: left;
-	width: 300px;
-	margin: 0 auto; }
-
-.piece__pic-infog--big li img,
-.piece__pic-infog--small li img {
+.piece__pic-infog--small li img,
+.piece__pic-infog--big li img {
 	width: 100%; }
 
 // ----- MQ ----- //
 @media ( min-width: 769px ) {
 
-	.piece__pic-infog--big {
-		float: left;
-		// 620px x 100 / 952px (Stor: 620 + Lille: 300 + 32 margin)
-		width: 65.12605042016807%;
-		// 32px x 100 / 952px (Stor: 620 + Lille: 300 + 32 margin)
-		margin-right: 3.36134453781513%; }
-
 	.piece__pic-infog--small {
 		clear: none;
 		float: left;
 		// 300px x 100 / 952px (Stor: 620 + Lille: 300 + 32 margin)
-		width: 31.51260504201681%; }
+		width: 31.51260504201681%;
+		// 32px x 100 / 952px (Stor: 620 + Lille: 300 + 32 margin)
+		margin-right: 3.36134453781513%; }
+
+	.piece__pic-infog--big {
+		float: left;
+		// 620px x 100 / 952px (Stor: 620 + Lille: 300 + 32 margin)
+		width: 65.12605042016807%; }
 
 }

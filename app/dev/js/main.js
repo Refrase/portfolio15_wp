@@ -10,7 +10,7 @@ jQuery( document ).ready( function($) {
 		});
 	};
 
-	// Brug kun, hvis vinduet er så smalt at menuen ikke kan være
+	// Brug kun, hvis vinduet er så smalt at menuen ikke kan være der
 	if ( $( window ).width() < 660 ) { enableHorizontalScroll(); };
 	// ... og hvis vinduet gøres smallere efter load
 	$( window ).on( 'resize', function() {
@@ -36,6 +36,19 @@ jQuery( document ).ready( function($) {
 	  itemSelector: '.piece-cat',
 	  layoutMode: 'fitRows'
 	});
+	/* ----- / -----*/
+
+	/* ----- Video følger parentstørrelse -----*/
+	function setVideoSizeToParent() {
+	  $( '#piece__video' ).css({
+	  	width: $( '.piece' ).innerWidth() + 'px',
+	  	height: $( '.piece' ).innerWidth() * 0.56 + 'px'
+	  });
+	};
+	setVideoSizeToParent();
+
+  // Følg størrelse ved ændring af vinduesstørrelse
+  $( window ).resize( setVideoSizeToParent );
 	/* ----- / -----*/
 
 	/* ----- Sæt og opdatér margin-bottom på .cards lig med margin-right på samme -----*/

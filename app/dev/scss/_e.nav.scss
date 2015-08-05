@@ -45,13 +45,13 @@
 	@include flex-direction( column );
 	@include align-items( flex-end );
 	height: 100%;
-	width: 120px;
+	width: 128px;
 	padding: 0;
 	margin-right: $dist-l;
 	border-right: 1px solid $colr-b3; }
 
 .menu--main img {
-	height: 56px;
+	height: 40px;
 	padding: $dist-m;
 	margin-right: 0; }
 
