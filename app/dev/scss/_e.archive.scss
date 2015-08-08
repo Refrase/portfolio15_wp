@@ -26,8 +26,22 @@ $card-bord-rad: 2px;
 
 $image-height: 200px;
 
+.cards a:nth-of-type(1) .card__image {
+	background-image: url( 'images/test3.png' ); }
+
+.cards a:nth-of-type(2) .card__image {
+	background-image: url( 'images/test2.png' ); }
+
+.cards a:nth-of-type(3) .card__image {
+	background-image: url( 'images/test.png' ); }
+
+.cards a:nth-of-type(4) .card__image {
+	background-image: url( 'images/test4.gif' ); }
+
+.cards a:nth-of-type(5) .card__image {
+	background-image: url( 'images/test5.png' ); }
+
 .card__image {
-	background: url( 'images/test.png' );
 	background-size: cover;
 	position: absolute;
 	left: 0;

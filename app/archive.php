@@ -7,7 +7,7 @@
 			<article class="card">
 				<div class="card__image"></div>
 				<div class="card__meta-wrap">
-				<h2>Test</h2>
+				<h2>Facebookalgorithm</h2>
 				<p>Introduktion af projektet i kort form. Introduktion af projektet i kort form, så man kan trykke sig videre ind og så faktisk se projektet på næste side.</p>
 				</div>
 			</article>
@@ -17,7 +17,7 @@
 			<article class="card card--web">
 				<div class="card__image"></div>
 				<div class="card__meta-wrap">
-				<h2>Test</h2>
+				<h2>Bold.dk</h2>
 				<p>Introduktion af projektet i kort form, så man kan trykke sig videre ind og så faktisk se projektet på næste side.</p>
 				</div>
 			</article>
@@ -27,27 +27,31 @@
 			<article class="card card--web">
 				<div class="card__image"></div>
 				<div class="card__meta-wrap">
-				<h2>Test</h2>
+				<h2>Håndboldanalyse</h2>
 				<p>Introduktion af projektet i kort form, så man kan trykke sig videre ind og så faktisk se projektet på næste side. Introduktion af projektet i kort form, så man kan trykke sig videre ind og så faktisk se projektet på næste side. Introduktion af projektet i kort form, så man kan trykke sig videre ind og så faktisk se projektet på næste side.</p>
 				</div>
 			</article>
 		</a>
 
-		<article class="card card--web">
-			<div class="card__image"></div>
-			<div class="card__meta-wrap">
-			<h2>Test</h2>
-			<p>Introduktion af projektet i kort form. Introduktion af projektet i kort form, så man kan trykke sig videre ind og så faktisk se projektet på næste side.</p>
-			</div>
-		</article>
+		<a href="single-visuali.php">
+			<article class="card card--web">
+				<div class="card__image"></div>
+				<div class="card__meta-wrap">
+				<h2>EURO 2020</h2>
+				<p>Introduktion af projektet i kort form. Introduktion af projektet i kort form, så man kan trykke sig videre ind og så faktisk se projektet på næste side.</p>
+				</div>
+			</article>
+		</a>
 
-		<article class="card card--web">
-			<div class="card__image"></div>
-			<div class="card__meta-wrap">
-			<h2>Test</h2>
-			<p>Introduktion af projektet i kort form, så man kan trykke sig videre ind og så faktisk se projektet på næste side. Introduktion af projektet i kort form, så man kan trykke sig videre ind og så faktisk se projektet på næste side.</p>
-			</div>
-		</article>
+		<a href="single-intera.php">
+			<article class="card card--web">
+				<div class="card__image"></div>
+				<div class="card__meta-wrap">
+				<h2>reCallr</h2>
+				<p>Introduktion af projektet i kort form, så man kan trykke sig videre ind og så faktisk se projektet på næste side. Introduktion af projektet i kort form, så man kan trykke sig videre ind og så faktisk se projektet på næste side.</p>
+				</div>
+			</article>
+		</a>
 
 	</section>
 
