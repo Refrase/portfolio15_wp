@@ -26,5 +26,5 @@
   <?php include_once( "analyticstracking.php" ) ?>
 
     <header>
-      <?php include 'nav.php'; ?>
+      <?php include( 'nav.php' ); ?>
     </header>

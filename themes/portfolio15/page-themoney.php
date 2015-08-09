@@ -2,17 +2,18 @@
 /**
  * Template Name: The Money
  */
+?>
 
-include 'header.php'; ?>
+<?php get_header(); ?>
 
-    <section>
-      <article>
-        <h1 class="header">Let's talk about that...</h1>
-        <p class="text">Contact me in the following ways:</p>
+  <section>
+    <article>
+      <h1 class="header">Let's talk about that...</h1>
+      <p class="text">Contact me in the following ways:</p>
 
-	      <p>Sociale profiler, email osv.</p>
-      </article>
+      <p>Sociale profiler, email osv.</p>
+    </article>
 
-    </section>
+  </section>
 
-<?php include 'footer.php'; ?>
+<?php get_footer(); ?>

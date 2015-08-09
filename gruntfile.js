@@ -52,7 +52,7 @@ module.exports = function(grunt) {
 				tasks: [ 'uglify:dev' ] // Concatenate scripts on change, but don't minify while developing (see options under 'uglify' ^)
 			},
 			css: {
-				files: [ 'themes/portfolio15/dev/scss/**/*.scss' ],
+				files: [ 'themes/portfolio15/dev/scss/*.scss' ],
 				tasks: [ 'sass:dev' ] // Concatenate styles on change, but don't minify while developing (see options under 'sass' ^)
 			},
       livereload: {

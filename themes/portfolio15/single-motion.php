@@ -1,4 +1,4 @@
-<?php include 'header.php'; ?>
+<?php get_header(); ?>
 
   <?php include 'piecemeta-top.php'; ?>
 
@@ -8,4 +8,4 @@
 
   <?php include 'piecemeta-bottom.php'; ?>
 
-<?php include 'footer.php'; ?>
+<?php get_footer(); ?>

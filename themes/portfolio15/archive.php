@@ -1,5 +1,5 @@
-<?php include 'header.php'; ?>
-<?php include 'nav-categ.php'; ?>
+<?php get_header(); ?>
+<?php include( 'nav-categ.php' ); ?>
 
 	<section class="cards">
 
@@ -55,4 +55,4 @@
 
 	</section>
 
-<?php include 'footer.php'; ?>
+<?php get_footer(); ?>
