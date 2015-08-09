@@ -2885,6 +2885,7 @@ ul {
 .menu--categ {
   opacity: 0;
   overflow-x: auto;
+  background: #fff;
   -webkit-box-pack: start;
   -moz-box-pack: start;
   box-pack: start;

@@ -3,6 +3,7 @@
 .menu--categ {
 	opacity: 0;
 	overflow-x: auto;
+	background: #fff;
 	@include justify-content( flex-start ); }
 
 .menu--categ li {
