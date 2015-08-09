@@ -1,0 +1,25 @@
+{
+  "name": "portfolio15",
+  "version": "1.0.0",
+  "description": "Portfolio of Andreas Reffstrup Rasmussen",
+  "main": "index.php",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Refrase/portfolio15_wp.git"
+  },
+  "author": "Andreas Reffstrup Rasmussen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Refrase/portfolio15_wp/issues"
+  },
+  "homepage": "https://github.com/Refrase/portfolio15_wp#readme",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-uglify": "^0.9.1",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-sass": "^1.0.0"
+  }
+}

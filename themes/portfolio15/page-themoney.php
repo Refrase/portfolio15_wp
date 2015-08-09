@@ -1,4 +1,9 @@
-<?php include 'header.php'; ?>
+<?php
+/**
+ * Template Name: The Money
+ */
+
+include 'header.php'; ?>
 
     <section>
       <article>
