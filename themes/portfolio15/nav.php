@@ -1,11 +1,19 @@
       <!-- Menu: Main -->
       <nav>
         <ul class="menu menu--main">
-          <img src="<?php bloginfo('template_directory'); ?>/images/ic/initialer.svg">
-          <li id="menuBtn1"><a href="index.php">Show</a></li>
-          <li><a href="page-me.php">Me</a></li>
-          <li><a href="page-themoney.php">The Money</a></li>
-        </ul>
 
+          <img class="menu--main__logo" src="<?php bloginfo('template_directory'); ?>/images/ic/initialer.svg">
+          <?php
+            $defaults = array(
+              'menu'            => 'Hovedmenu',
+              'theme_location'  => 'Hovedmenu',
+              'depth'           => 1,
+              'container'       => '',
+              'items_wrap'      => '%3$s' // Removes the default wrapping <ul>-tag
+            );
+            wp_nav_menu( $defaults );
+          ?>
+
+        </ul>
         <a href="archive.php"><h2 class="menu--main__random">Random</h2></a>
       </nav>
