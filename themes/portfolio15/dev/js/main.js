@@ -2,7 +2,7 @@
 
 jQuery( document ).ready( function($) {
 
-	/* ----- Mousewheel horizontal scroll when hovering specified elem -----*/
+	/* ----- Mousewheel horizontal scroll when hovering specified elem (for submenu) -----*/
 	var enableHorizontalScroll = function() {
 		$( '.menu--categ' ).mousewheel(function(event, delta) {
 		  this.scrollLeft -= (delta * 2); // Speed
@@ -31,13 +31,6 @@ jQuery( document ).ready( function($) {
 	});
 	/* ----- / -----*/
 
-	/* ----- Omarrangér kategorier efter plads [Isotope] -----*/
-	$( '.piece-cats' ).isotope({
-	  itemSelector: '.piece-cat',
-	  layoutMode: 'fitRows'
-	});
-	/* ----- / -----*/
-
 	/* ----- Video følger parentstørrelse -----*/
 	function setVideoSizeToParent() {
 	  $( '#piece__video' ).css({
@@ -49,30 +42,6 @@ jQuery( document ).ready( function($) {
 
   // Følg størrelse ved ændring af vinduesstørrelse
   $( window ).resize( setVideoSizeToParent );
-	/* ----- / -----*/
-
-	/* ----- Sæt og opdatér margin-bottom på .cards lig med margin-right på samme -----*/
-	// BLEV BRUGT MED NEAT SOM GRID LØSNING
-	// var setCardMargBtmSameAsMargRgt = function() {
-	// 	var cardMarginRight = $( '.card' ).css( 'margin-right' );
-	// 	$( '.card' ).css( 'margin-bottom', cardMarginRight );
-	// };
-
-	// Hvis vinduet har mindst to kolonner
-	// var oneColBreakP = 659 - 15; // De 15 må være scrollbar der kompenseres for?
-	// // Gør det på document.ready
-	// if ( $( window ).width() > oneColBreakP ) { setCardMargBtmSameAsMargRgt(); }
-	// // ... og window.resize
-	// $( window ).on( 'resize', function() {
-	// 	console.log( $( window ).width() );
-	// 	if ( $( window ).width() > oneColBreakP ) {
-	// 		setCardMargBtmSameAsMargRgt();
-	// 	};
-	// 	// Sæt margin-bottom til $dist-l, hvis den kommer under igen
-	// 	if ( $( window ).width() < oneColBreakP ) {
-	// 		$( '.card' ).css( 'margin-bottom', '32px' );
-	// 	};
-	// });
 	/* ----- / -----*/
 
 });

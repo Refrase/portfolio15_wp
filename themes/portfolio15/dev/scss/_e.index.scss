@@ -24,9 +24,9 @@
 	transition: all 0.2s ease-out; }
 
 .piece-cat:hover {
+	z-index: 1;
 	transform: scale( 1.02 );
-	box-shadow: 2px 2px 16px 1px rgba( 0,0,0,0.15 );
-	z-index: 10; }
+	box-shadow: 2px 2px 16px 1px rgba( 0,0,0,0.15 ); }
 
 // ----- MQ ----- //
 @media ( min-width: 696px ) {

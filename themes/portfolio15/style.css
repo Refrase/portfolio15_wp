@@ -2985,9 +2985,9 @@ li.menu--categ__item-active {
 }
 
 .piece-cat:hover {
+  z-index: 1;
   transform: scale(1.02);
   box-shadow: 2px 2px 16px 1px rgba(0, 0, 0, 0.15);
-  z-index: 10;
 }
 
 @media (min-width: 696px) {
