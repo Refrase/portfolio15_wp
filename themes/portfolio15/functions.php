@@ -1,6 +1,7 @@
 <?php
 
 	add_theme_support( 'menus' );
+	add_theme_support( 'post-thumbnails' );
 
 	// Menu
 	function p15_theme_menus() {
@@ -27,7 +28,13 @@
 	function remove_theme_menus() {
     global $submenu;
     unset($submenu['themes.php'][5]);
-    unset($submenu['themes.php'][15]);
-	}
+    unset($submenu['themes.php'][15]); }
+
+	// Remove default width and height HTML-attributes from post_thumbnails
+	add_filter( 'post_thumbnail_html', 'remove_thumbnail_dimensions', 10, 3 );
+
+	function remove_thumbnail_dimensions( $html, $post_id, $post_image_id ) {
+    $html = preg_replace( '/(width|height)=\"\d*\"\s/', "", $html );
+    return $html; }
 
 ?>

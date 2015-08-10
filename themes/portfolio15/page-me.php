@@ -13,6 +13,11 @@
     </article>
 
     <article>
+      <h1>CV</h1>
+      <p>FCN, Politiken, Zetland</p>
+    </article>
+
+    <article>
       <h1>Skills</h1>
       <p>Infographic over skill-niveauer i Adobe-pakke, kodesprog osv.</p>
     </article>

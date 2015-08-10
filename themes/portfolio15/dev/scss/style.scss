@@ -39,12 +39,12 @@ $fa-font-path: "fonts/fontawesome" !default;
 // E - Objects: Dele af siden
 @import "e.nav"; // Menu: Main
 @import "e.nav-categ"; // Menu: Kategorier
-@import "e.index"; // 'Vælg kategori'-startside
 @import "e.archive"; // Portfolio
 @import "e.single"; // Portfolio værker generelt
 @import "e.single-infog.scss"; // Infografik værker
 @import "e.single-web.scss"; // Web værker
 @import "e.page"; // Me + The Money
+@import "e.page-show"; // 'Vælg kategori'-startside
 
 // F - Components: Specifikke dele af elementer
 
