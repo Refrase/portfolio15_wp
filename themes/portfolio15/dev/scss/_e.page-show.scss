@@ -3,11 +3,11 @@
 .intro-bg {
 	position: absolute;
 	z-index: -1;
-	width: 100%;
-	height: 100%;
-	top: 0;
-	left: 0;
-	background: url( 'images/test.png' );
+	width: calc( 100% + 64px ); // Compensation for minus position below to avoid faded out edges
+	height: calc( 100% + 64px ); // Compensation for minus position below to avoid faded out edges
+	top: -32px;
+	left: -32px;
+	background-image: url( 'images/showbg1.png' );
 	background-size: cover;
 	@include blur( 20px ); }
 
@@ -35,5 +35,13 @@
 	.piece-cats ul li a {
 		@include pad-top-bot( $dist-l );
 		@include pad-lef-rig( $dist-xl ); }
+
+}
+
+@media ( min-width: 769px ) {
+
+	.intro-bg {
+		width: calc( 100% - 129px + 64px); // Mainmenu width + 1 (border) + compensation for minus position above
+		margin-left: 129px; } // Mainmenu width + 1 (border)
 
 }
