@@ -6,12 +6,14 @@
 	background: #fff;
 	@include justify-content( flex-start ); }
 
-.menu--categ li {
+.menu--categ li { @include pad-top-bot( $dist-s ); }
+
+.menu--categ li a {
 	padding: $dist-s;
 	@include pad-lef-rig( $dist-m );
 	transition: all 0.1s ease-in; }
 
-.menu--categ li:hover {
+.menu--categ li a:hover {
 	cursor: pointer;
 	background: $colr-b1;
 	color: #fff; }
@@ -31,6 +33,6 @@ li.menu--categ__item-active { font-weight: 700; }
 
 @media ( min-width: 769px ) {
 
-		.menu--categ { margin-left: 129px; }
+		.menu--categ { margin-left: 129px; } // Mainmenu width + 1 (border)
 
 }

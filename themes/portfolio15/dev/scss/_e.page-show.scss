@@ -16,14 +16,15 @@
 	// @include pad-lef-rig( 0 );
 }
 
-.piece-cat {
+.piece-cats ul li a {
+	@extend h1;
 	float: left;
 	background: #fff;
 	@include pad-top-bot( $dist-m + $dist-s );
 	@include pad-lef-rig( $dist-l + $dist-s );
 	transition: all 0.2s ease-out; }
 
-.piece-cat:hover {
+.piece-cats ul li a:hover {
 	z-index: 1;
 	transform: scale( 1.02 );
 	box-shadow: 2px 2px 16px 1px rgba( 0,0,0,0.15 ); }
@@ -31,7 +32,7 @@
 // ----- MQ ----- //
 @media ( min-width: 696px ) {
 
-	.piece-cat {
+	.piece-cats ul li a {
 		@include pad-top-bot( $dist-l );
 		@include pad-lef-rig( $dist-xl ); }
 

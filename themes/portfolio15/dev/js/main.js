@@ -20,15 +20,24 @@ jQuery( document ).ready( function($) {
 	});
 	/* ----- / -----*/
 
-	/* ----- Slide kategorier ind -----*/
+	/* ----- Vis kategorier ind - Variér, hvilken effect der bruges fra gang til gang -----*/
 	$( '#menuCateg' ).hide();
 	$( '#menuCateg' ).css( 'opacity', 1 );
-	$( '#menuCateg' ).stop( true, true ).show({
-		effect: 'slide',
+
+	var menuShowCount = Math.floor((Math.random() * 2) + 1);
+
+	var effectAttr = {
+		effect: 'bounce',
 		direction: 'up',
+		distance: 10,
 		easing: 'easeOutExpo',
-		duration: 1600
-	});
+		duration: 400
+	}
+
+	if ( menuShowCount === 1 ) { effectAttr.effect = 'slide' };
+	if ( menuShowCount === 2 ) { effectAttr.effect = 'bounce' };
+
+	$( '#menuCateg' ).stop( true, true ).show( effectAttr );
 	/* ----- / -----*/
 
 	/* ----- Video følger parentstørrelse -----*/

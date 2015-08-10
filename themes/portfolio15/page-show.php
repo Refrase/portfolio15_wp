@@ -7,14 +7,20 @@
 <?php get_header(); ?>
 
   <section class="piece-cats">
-    <a href="<?php echo home_url(); ?>"><h1 class="piece-cat">Web</h1></a>
-    <a href="<?php echo home_url(); ?>"><h1 class="piece-cat">Infographics</h1></a>
-    <a href="archive.php"><h1 class="piece-cat">Interaction</h1></a>
-    <a href="archive.php"><h1 class="piece-cat">Motion</h1></a>
-    <a href="archive.php"><h1 class="piece-cat">Visual Identity</h1></a>
-    <a href="archive.php"><h1 class="piece-cat">Print</h1></a>
-    <a href="archive.php"><h1 class="piece-cat">Textile</h1></a>
-    <a href="archive.php"><h1 class="piece-cat">X</h1></a>
+    <ul>
+
+      <?php
+        $defaults = array(
+          'menu'            => 'Kategorimenu',
+          'theme_location'  => 'Kategorimenu',
+          'depth'           => 1,
+          'container'       => '',
+          'items_wrap'      => '%3$s' // Removes the default wrapping <ul>-tag
+        );
+        wp_nav_menu( $defaults );
+      ?>
+
+    </ul>
   </section>
 
   <div class="intro-bg"></div>
