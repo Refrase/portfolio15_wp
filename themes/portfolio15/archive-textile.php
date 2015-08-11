@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Visual Identity
+ * Template Name: Textiles
 */
 ?>
 
@@ -11,7 +11,7 @@
     <article>
 
     <?php
-      $args = [ 'post_type' => 'visualidentity' ];
+      $args = [ 'post_type' => 'textile' ];
       $query = new WP_Query( $args );
     ?>
     <?php if( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>

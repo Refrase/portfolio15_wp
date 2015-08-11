@@ -2776,6 +2776,20 @@ ul {
 }
 
 /* ----- Grid ----- */
+/* ----- Breadcrumb ----- */
+.breadc {
+  color: #ccc;
+  margin-bottom: 32px;
+}
+
+.breadc a {
+  color: #333;
+}
+
+.breadc a:hover {
+  color: #ccc;
+}
+
 /* ----- Navigation ----- */
 .menu {
   display: -webkit-box;
@@ -3044,11 +3058,6 @@ li.menu--categ__item-active {
 }
 
 /* ----- Piece ----- */
-.breadc {
-  color: #ccc;
-  margin-bottom: 32px;
-}
-
 .piece > .piece__text {
   width: calc( 80% - 32px);
   margin-right: 0;

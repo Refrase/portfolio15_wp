@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Motion
+ * Template Name: Prints
 */
 ?>
 
@@ -11,7 +11,7 @@
     <article>
 
     <?php
-      $args = [ 'post_type' => 'motiongraphic' ];
+      $args = [ 'post_type' => 'print' ];
       $query = new WP_Query( $args );
     ?>
     <?php if( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>

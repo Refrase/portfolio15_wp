@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Print
+ * Template Name: Visual Identities
 */
 ?>
 
@@ -11,7 +11,7 @@
     <article>
 
     <?php
-      $args = [ 'post_type' => 'print' ];
+      $args = [ 'post_type' => 'visualidentity' ];
       $query = new WP_Query( $args );
     ?>
     <?php if( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>

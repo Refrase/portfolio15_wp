@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Websites
+ * Template Name: Motion Graphics
 */
 ?>
 
@@ -11,7 +11,7 @@
     <article>
 
     <?php
-      $args = [ 'post_type' => 'website' ];
+      $args = [ 'post_type' => 'motiongraphic' ];
       $query = new WP_Query( $args );
     ?>
     <?php if( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>

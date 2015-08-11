@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Interactive
+ * Template Name: Interactives
 */
 ?>
 

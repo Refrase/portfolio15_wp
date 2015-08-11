@@ -1,17 +1,20 @@
 <?php
 /**
- * Template Name: Textile
+ * Template Name: Websites
 */
 ?>
+
+<!-- OBS! Filen skal hedde 'archive-[post-type-slug-angivet-under-CPT-UI]' -->
 
 <?php get_header(); ?>
 <?php include( 'nav-categ.php' ); ?>
 
+  <!-- Husk at sætte 'Settings' -> 'Has Archive' -> 'True' under CPT UI, når en post type oprettes -->
   <section class="cards">
     <article>
 
     <?php
-      $args = [ 'post_type' => 'textile' ];
+      $args = [ 'post_type' => 'website' ];
       $query = new WP_Query( $args );
     ?>
     <?php if( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
