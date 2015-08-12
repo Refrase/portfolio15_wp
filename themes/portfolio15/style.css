@@ -2661,7 +2661,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 /* ----- Partials ----- */
 /* ----- Colors ----- */
-*, h1, .piece-cats ul li a, h2, h3, h4, h5, h6, p, a, span {
+*, h1, .piece-cats ul li a, h2, .menu--random li a, h3, h4, h5, h6, p, a, span {
   color: #333;
 }
 
@@ -2727,7 +2727,7 @@ body {
   font-style: normal;
 }
 
-h1, .piece-cats ul li a, h2, h3, h4, h5, h6 {
+h1, .piece-cats ul li a, h2, .menu--random li a, h3, h4, h5, h6 {
   font-family: 'League Gothic', sans-serif;
   font-weight: 400;
   text-transform: uppercase;
@@ -2738,7 +2738,7 @@ h1, .piece-cats ul li a {
   font-size: 4.5em;
 }
 
-h2 {
+h2, .menu--random li a {
   font-size: 2.2em;
 }
 
@@ -2841,7 +2841,7 @@ ul {
   color: #efefef;
 }
 
-.menu--main__random {
+.menu--random li a {
   z-index: 1000;
   position: fixed;
   bottom: 32px;
@@ -2853,7 +2853,7 @@ ul {
   transition: padding-right 0.3s ease-out;
 }
 
-.menu--main__random:hover {
+.menu--random li a:hover {
   padding-right: 32px;
 }
 
@@ -2997,13 +2997,13 @@ li.menu--categ__item-active {
   transition: all 0.2s ease-out;
 }
 
-.card h2 {
+.card h2, .card .menu--random li a, .menu--random li .card a {
   margin-bottom: 8px;
 }
 
 .card:hover {
   cursor: pointer;
-  box-shadow: 2px 2px 16px 1px rgba(0, 0, 0, 0.15);
+  box-shadow: 2px 8px 32px 0px rgba(0, 0, 0, 0.1);
 }
 
 .card__image {
@@ -3239,11 +3239,11 @@ li.menu--categ__item-active {
   left: -32px;
   background-image: url("images/showbg1.png");
   background-size: cover;
-  -webkit-filter: blur(20px);
-  -moz-filter: blur(20px);
-  -o-filter: blur(20px);
-  -ms-filter: blur(20px);
-  filter: blur(20px);
+  -webkit-filter: blur(40px);
+  -moz-filter: blur(40px);
+  -o-filter: blur(40px);
+  -ms-filter: blur(40px);
+  filter: blur(40px);
 }
 
 .piece-cats {

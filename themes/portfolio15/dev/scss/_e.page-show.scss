@@ -9,7 +9,7 @@
 	left: -32px;
 	background-image: url( 'images/showbg1.png' );
 	background-size: cover;
-	@include blur( 20px ); }
+	@include blur( 40px ); }
 
 .piece-cats { // Counter c.globals style of section
 	@include pad-top-bot( 0 );

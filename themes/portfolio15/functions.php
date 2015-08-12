@@ -8,7 +8,8 @@
 		register_nav_menus(
 			array(
 				'Hovedmenu' => __( 'Hovedmenu', 'portfolio15' ),
-				'Kategorimenu' => __( 'Kategorimenu', 'portfolio15' )
+				'Kategorimenu' => __( 'Kategorimenu', 'portfolio15' ),
+				'Randommenu' => __( 'Randommenu', 'portfolio15' )
 			)
 		);
 	} add_action( 'init', 'p15_theme_menus' );

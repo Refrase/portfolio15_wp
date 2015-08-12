@@ -25,7 +25,8 @@ $menu-bord-colr: $colr-b3;
 	background: $colr-b1;
 	color: $colr-b3; }
 
-.menu--main__random {
+.menu--random li a {
+	@extend h2;
 	z-index: 1000;
 	position: fixed;
 	bottom: $dist-l;
@@ -36,7 +37,7 @@ $menu-bord-colr: $colr-b3;
 	padding: $dist-m;
 	transition: padding-right 0.3s ease-out; }
 
-.menu--main__random:hover { padding-right: $dist-l; }
+.menu--random li a:hover { padding-right: $dist-l; }
 
 // ----- MQ ----- //
 @media ( min-width: 769px ) {

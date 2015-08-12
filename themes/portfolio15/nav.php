@@ -15,5 +15,18 @@
           ?>
 
         </ul>
-        <a href="archive.php"><h2 class="menu--main__random">Random</h2></a>
+
+        <ul class="menu--random">
+          <?php
+            $defaults2 = array(
+              'menu'            => 'Randommenu',
+              'theme_location'  => 'Randommenu',
+              'depth'           => 1,
+              'container'       => '',
+              'items_wrap'      => '%3$s' // Removes the default wrapping <ul>-tag
+            );
+            wp_nav_menu( $defaults2 );
+          ?>
+        </ul>
+
       </nav>
