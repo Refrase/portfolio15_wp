@@ -23,6 +23,8 @@
     </ul>
   </section>
 
-  <div class="intro-bg"></div>
+  <div class="intro-bg-wrap">
+    <div class="intro-bg"></div>
+  </div>
 
 <?php get_footer(); ?>
