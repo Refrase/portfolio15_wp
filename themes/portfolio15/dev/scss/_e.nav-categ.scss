@@ -16,11 +16,8 @@
 	transition: all 0.1s ease-in; }
 
 .menu--categ li a:hover {
-	cursor: pointer;
 	background: $colr-b1;
 	color: #fff; }
-
-li.menu--categ__item-active { font-weight: 700; }
 
 .menu--categ__random {
 	margin-left: $dist-m;
