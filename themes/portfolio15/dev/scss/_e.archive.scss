@@ -14,7 +14,7 @@ $card-bord-rad: 2px;
 	padding: $dist-l;
 	background: #fff;
 	border-radius: $card-bord-rad;
-	border: 1px solid $colr-b3;
+	// border: 1px solid $colr-b3;
 	@include column-break-inside( avoid );
 	transition: all 0.2s ease-out; }
 

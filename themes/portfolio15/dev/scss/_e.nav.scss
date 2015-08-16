@@ -5,39 +5,39 @@ $menu-bord-colr: $colr-b3;
 .menu {
 	@include display( flex );
 	@include align-items( center );
-	background: #fff;
-	border-bottom: 1px solid $menu-bord-colr; }
+	background: #fff; }
 
 .menu--main {
-	@include justify-content( space-between );
+	@include justify-content( flex-start );
 	padding: $dist-m;
-	padding-right: 0; }
-
-.menu--main img {
-	height: 40px;
-	margin-right: auto; }
+	padding-left: 0;
+	z-index: 1000;
+	border-bottom: 1px solid $colr-b3; }
 
 .menu--main li a {
-	border-left: 1px solid $menu-bord-colr;
-	padding: 26px; }
+	padding: 18px;
+	transition: all 0.3s; }
 
-.menu--main li a:hover {
-	background: $colr-b1;
-	color: $colr-b3; }
+.menu--main li a:hover { transform: rotate( 360deg ); }
+
+.menu--main .menu-item a i { display: none; }
+
+.menu--main li a span { display: inline-block; }
 
 .menu--random li a {
 	@extend h2;
-	z-index: 1000;
 	position: fixed;
-	bottom: $dist-l;
-	right: 0;
+	width: calc( 100% - 32px );
+	bottom: 0;
 	color: $colr-b4;
 	text-align: center;
 	background: $colr-b1;
 	padding: $dist-m;
-	transition: padding-right 0.3s ease-out; }
+	transition: all 0.3s ease-out;
+	z-index: 1000;
+	opacity: 0.9; }
 
-.menu--random li a:hover { padding-right: $dist-l; }
+.menu--random li a:hover { padding-bottom: $dist-m + $dist-s; }
 
 // ----- MQ ----- //
 @media ( min-width: 769px ) {
@@ -47,11 +47,11 @@ $menu-bord-colr: $colr-b3;
 	@include justify-content( flex-start );
 	@include flex-direction( column );
 	@include align-items( flex-end );
-	height: 100%;
-	width: 128px;
+	height: auto;
+	width: 56px;
 	padding: 0;
 	margin-right: $dist-l;
-	border-right: 1px solid $menu-bord-colr; }
+	border-bottom: none;  }
 
 .menu--main img {
 	height: 40px;
@@ -60,11 +60,31 @@ $menu-bord-colr: $colr-b3;
 
 .menu--main li a {
 	@include display( block );
-	width: 112px - $dist-m - $dist-m;
-	border-left: none;
-	border-top: 1px solid $menu-bord-colr;
-	text-align: right; }
+	width: 52px - $dist-m - $dist-m;
+	border-right: none;
+	text-align: center; }
 
+.menu--main .menu-item a i { display: inline-block; }
+
+.menu--main li a span {
+	display: none;
+	white-space: nowrap;
+	position: absolute;
+	padding: 8px 18px 8px 18px;
+	color: #fff;
+	background: $colr-b1;
+	margin-top: -30px;
+	top: auto;
+	left: 56px; }
+
+.menu-main__message { display: none; }
+
+.menu--random li a {
+	width: auto;
+	bottom: $dist-l;
+	right: 0; }
+
+.menu--random li a:hover { padding-right: $dist-l; padding-bottom: $dist-m; }
 
 
 }

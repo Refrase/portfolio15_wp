@@ -9,7 +9,8 @@
 .menu--categ li { @include pad-top-bot( $dist-s ); }
 
 .menu--categ li a {
-	padding: $dist-s;
+	white-space: nowrap;
+	padding: 9px;
 	@include pad-lef-rig( $dist-m );
 	transition: all 0.1s ease-in; }
 
@@ -33,6 +34,6 @@ li.menu--categ__item-active { font-weight: 700; }
 
 @media ( min-width: 769px ) {
 
-		.menu--categ { margin-left: 129px; } // Mainmenu width + 1 (border)
+		.menu--categ { margin-left: 56px; } // Mainmenu width + 1 (border)
 
 }

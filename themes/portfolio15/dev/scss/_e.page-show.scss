@@ -10,7 +10,7 @@
 	height: calc( 100% + 64px ); // Compensation for minus position below to avoid faded out edges
 	top: -32px;
 	left: -32px;
-	background-image: url( 'images/showbg1.png' );
+	// background-image: url( 'images/showbg1.png' );
 	background-size: cover;
 	@include blur( 40px ); }
 
@@ -21,6 +21,7 @@
 
 .piece-cats ul li a {
 	@extend h1;
+	white-space: nowrap;
 	float: left;
 	background: #fff;
 	@include pad-top-bot( $dist-m + $dist-s );
@@ -44,7 +45,6 @@
 @media ( min-width: 769px ) {
 
 	.intro-bg {
-		width: calc( 100% - 129px + 64px); // Mainmenu width + 1 (border) + compensation for minus position above
-		margin-left: 129px; } // Mainmenu width + 1 (border)
-
+		width: calc( 100% + 96px); // Compensation for minus position above
+ 	}
 }

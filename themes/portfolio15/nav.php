@@ -1,8 +1,6 @@
       <!-- Menu: Main -->
       <nav>
         <ul class="menu menu--main">
-
-          <img class="menu--main__logo" src="<?php bloginfo('template_directory'); ?>/images/ic/initialer.svg">
           <?php
             $defaults = array(
               'menu'            => 'Hovedmenu',
@@ -13,7 +11,6 @@
             );
             wp_nav_menu( $defaults );
           ?>
-
         </ul>
 
         <ul class="menu--random">
