@@ -28,6 +28,11 @@
 	@include pad-lef-rig( $dist-l + $dist-s );
 	transition: all 0.2s ease-out; }
 
+.piece-cats ul li:last-child a {
+	@include border-right-radius( 8px );
+	border-top-right-radius: 0;
+}
+
 .piece-cats ul li a:hover {
 	z-index: 1;
 	transform: scale( 1.02 );

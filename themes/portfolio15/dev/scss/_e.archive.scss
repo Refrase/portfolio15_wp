@@ -1,6 +1,6 @@
 /* ----- Portfolio ----- */
 
-$card-bord-rad: 2px;
+$card-bord-rad: 4px;
 
 .cards {
   @include column-gap( 0 );
@@ -14,7 +14,6 @@ $card-bord-rad: 2px;
 	padding: $dist-l;
 	background: #fff;
 	border-radius: $card-bord-rad;
-	// border: 1px solid $colr-b3;
 	@include column-break-inside( avoid );
 	transition: all 0.2s ease-out; }
 

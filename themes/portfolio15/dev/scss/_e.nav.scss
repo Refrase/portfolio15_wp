@@ -12,9 +12,12 @@ $menu-bord-colr: $colr-b3;
 	padding: $dist-m;
 	padding-left: 0;
 	z-index: 1000;
-	border-bottom: 1px solid $colr-b3; }
+	border-bottom: 1px solid $colr-b3;
+	@include border-right-radius( 4px );
+	border-top-right-radius: 0; }
 
 .menu--main li a {
+	font-weight: 600;
 	padding: 18px;
 	transition: all 0.3s; }
 
@@ -82,7 +85,8 @@ $menu-bord-colr: $colr-b3;
 .menu--random li a {
 	width: auto;
 	bottom: $dist-l;
-	right: 0; }
+	right: 0;
+	@include border-left-radius( 4px ); }
 
 .menu--random li a:hover { padding-right: $dist-l; padding-bottom: $dist-m; }
 
