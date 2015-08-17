@@ -30,13 +30,12 @@
 
 .piece-cats ul li:last-child a {
 	@include border-right-radius( 8px );
-	border-top-right-radius: 0;
-}
+	border-top-right-radius: 0; }
 
 .piece-cats ul li a:hover {
-	z-index: 1;
-	transform: scale( 1.02 );
-	box-shadow: 2px 2px 16px 1px rgba( 0,0,0,0.15 ); }
+	z-index: 100;
+	@include transform( scale( 1.02 ) );
+	box-shadow: 0px 2px 32px 0px rgba( 0,0,0,0.15 ); }
 
 // ----- MQ ----- //
 @media ( min-width: 696px ) {

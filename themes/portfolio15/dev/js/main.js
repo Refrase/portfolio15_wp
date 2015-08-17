@@ -5,7 +5,7 @@ jQuery( document ).ready( function($) {
 	/* ----- Show menu labels when hovering main menu -----*/
 	var menuLinks = $( '.menu--main li a' );
 
-	var showLabel = function() { $( this ).children( 'span' ).stop( true ).fadeIn( 500 ); };
+	var showLabel = function() { $( this ).children( 'span' ).stop( true ).fadeIn( 600 ); };
   var hideLabel = function() { $( this ).children( 'span' ).hide(); };
 
   var bindLabelToggle = function() {
@@ -51,19 +51,29 @@ jQuery( document ).ready( function($) {
 	/* ----- / ----- */
 
 	/* ----- Mousewheel horizontal scroll when hovering specified elem (for submenu) -----*/
-	var enableHorizontalScroll = function() {
-		$( '.menu--categ' ).mousewheel(function(event, delta) {
-		  this.scrollLeft -= (delta * 30); // Speed
+	var bindEnableHorizontalScroll = function() {
+		$( '.menu--categ' ).bind( 'mousewheel', function(event, delta) {
+		  this.scrollLeft -= (delta * 1); // Speed
+		  event.preventDefault();
+		});
+	};
+
+	var unbindEnableHorizontalScroll = function() {
+		$( '.menu--categ' ).unbind( 'mousewheel', function(event, delta) {
+		  this.scrollLeft -= (delta * 1); // Speed
 		  event.preventDefault();
 		});
 	};
 
 	// Brug kun, hvis vinduet er så smalt at menuen ikke kan være der
-	if ( $( window ).width() < 660 ) { enableHorizontalScroll(); };
+	if ( $( window ).width() < 660 ) { bindEnableHorizontalScroll(); }
+	else { unbindEnableHorizontalScroll(); };
 	// ... og hvis vinduet gøres smallere efter load
 	$( window ).on( 'resize', function() {
 		if ( $( window ).width() < 660 ) {
-			enableHorizontalScroll();
+			bindEnableHorizontalScroll();
+		} else {
+			unbindEnableHorizontalScroll();
 		}
 	});
 	/* ----- / -----*/
@@ -73,7 +83,7 @@ jQuery( document ).ready( function($) {
 	$( '#menuCateg' ).css( 'opacity', 1 );
 
 	var randDistance = Math.floor((Math.random() * 50) + 1);
-	var randDuration = Math.floor((Math.random() * 1200) + 1);
+	var randDuration = Math.floor((Math.random() * 1000) + 1);
 
 	var effectAttr = {
 		effect: 'bounce',

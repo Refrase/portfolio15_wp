@@ -12,9 +12,10 @@ $menu-bord-colr: $colr-b3;
 	padding: $dist-m;
 	padding-left: 0;
 	z-index: 1000;
-	border-bottom: 1px solid $colr-b3;
 	@include border-right-radius( 4px );
 	border-top-right-radius: 0; }
+
+.menu--main li:hover { z-index: 1; }
 
 .menu--main li a {
 	font-weight: 900;
@@ -25,24 +26,9 @@ $menu-bord-colr: $colr-b3;
 	@include border-right-radius( 4px );
 	border-top-right-radius: 0; }
 
-.menu--main li a:hover { transform: rotate( 360deg ); }
-
 .menu--main .menu-item a i { display: none; }
 
 .menu--main li a span { display: inline-block; }
-
-.current-menu-item a,
-.current-menu-item a i {
-	@include animation(active 6s ease-out infinite);
-	@include animation-delay( 1.2s ); } // menu-categ animation in main.js
-
-@keyframes active {
-	0% { transform: translate3d( 0px, 0, 0 ); }
-	25% { transform: translate3d( -4px, 0, 0 ); }
-	50% { transform: translate3d( 0px, 0, 0 ); }
-	75% { transform: translate3d( 4px, 0, 0 ); }
-	100% { transform: translate3d( 0px, 0, 0 ); }
-}
 
 .menu--random li a {
 	@extend h2;
@@ -60,52 +46,78 @@ $menu-bord-colr: $colr-b3;
 .menu--random li a:hover { padding-bottom: $dist-m + $dist-s; }
 
 // ----- MQ ----- //
+@media ( max-width: 768px ) {
+
+	.menu--main li a:hover {
+		box-shadow: 0px -2px 16px 0px rgba( 0,0,0,0.15 );
+		background: #fff; }
+
+	.menu--main .current-menu-item a {
+		background: $colr-b4;
+		box-shadow: inset 0px 1px 1px 0px rgba( 0,0,0,0.1 ); }
+
+}
+
 @media ( min-width: 769px ) {
 
-.menu--main {
-	position: fixed;
-	@include justify-content( flex-start );
-	@include flex-direction( column );
-	@include align-items( flex-end );
-	height: auto;
-	width: 56px;
-	padding: 0;
-	margin-right: $dist-l;
-	border-bottom: none;  }
+	.menu--main {
+		position: fixed;
+		@include justify-content( flex-start );
+		@include flex-direction( column );
+		@include align-items( flex-end );
+		height: auto;
+		width: 56px;
+		padding: 0;
+		margin-right: $dist-l;
+		border-bottom: none;  }
 
-.menu--main img {
-	height: 40px;
-	padding: $dist-m;
-	margin-right: 0; }
+	.menu--main img {
+		height: 40px;
+		padding: $dist-m;
+		margin-right: 0; }
 
-.menu--main li a {
-	@include display( block );
-	width: 52px - $dist-m - $dist-m;
-	border-right: none;
-	text-align: center; }
+	.menu--main li a {
+		@include display( block );
+		width: 52px - $dist-m - $dist-m;
+		border-right: none;
+		text-align: center; }
 
-.menu--main .menu-item a i { display: inline-block; }
+	.menu--main li a:hover { transform: rotate( 360deg ); }
 
-.menu--main li a span {
-	display: none;
-	white-space: nowrap;
-	position: absolute;
-	padding: 8px 18px 8px 18px;
-	color: #fff;
-	background: $colr-b1;
-	margin-top: -30px;
-	top: auto;
-	left: 56px; }
+	.menu--main li a:hover,
+	.menu--main li:last-child.current-menu-item a:hover  {
+		box-shadow: 8px 0px 16px 0px rgba( 0,0,0,0.15 );
+		background: #fff; }
 
-.menu-main__message { display: none; }
+	.menu--main .current-menu-item a {
+		background: $colr-b4;
+		box-shadow: inset 2px 0px 4px 0px rgba( 0,0,0,0.1 ); }
 
-.menu--random li a {
-	width: auto;
-	bottom: $dist-l;
-	right: 0;
-	@include border-left-radius( 4px ); }
+	.menu--main li:last-child.current-menu-item a {
+		box-shadow: inset 2px 1px 4px -1px rgba( 0,0,0,0.1 ); }
 
-.menu--random li a:hover { padding-right: $dist-l; padding-bottom: $dist-m; }
+	.menu--main .menu-item a i { display: inline-block; }
+
+	.menu--main li a span {
+		display: none;
+		white-space: nowrap;
+		position: absolute;
+		padding: 8px 18px 8px 18px;
+		color: #fff;
+		background: $colr-b1;
+		margin-top: -30px;
+		top: auto;
+		left: 56px; }
+
+	.menu-main__message { display: none; }
+
+	.menu--random li a {
+		width: auto;
+		bottom: $dist-l;
+		right: 0;
+		@include border-left-radius( 4px ); }
+
+	.menu--random li a:hover { padding-right: $dist-l; padding-bottom: $dist-m; }
 
 
 }

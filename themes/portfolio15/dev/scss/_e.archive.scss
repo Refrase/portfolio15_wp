@@ -21,7 +21,7 @@ $card-bord-rad: 4px;
 
 .card:hover {
 	cursor: pointer;
-	box-shadow: 2px 8px 32px 0px rgba( 0,0,0,0.1 ); }
+	box-shadow: 0px 8px 24px 0px rgba( 0,0,0,0.075 ); }
 
 $image-height: 200px;
 
@@ -45,6 +45,14 @@ $image-height: 200px;
 @media ( max-width: $section-bp1 ) {
 
 	.cards { @include pad-lef-rig( $dist-l - $dist-m ); }
+
+}
+
+@media ( min-width: $section-bp1 ) {
+
+	.cards {
+		@include pad-top-bot( $dist-xl - $dist-m - 4px );
+		@include pad-lef-rig( $dist-l ); }
 
 }
 
