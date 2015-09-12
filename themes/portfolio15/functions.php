@@ -55,6 +55,7 @@
       'edit.php?post_type=x',
       'separator2', // Second separator
       'edit.php?post_type=page', // Pages
+      'edit.php', // Posts
      	'upload.php', // Media
      	'plugins.php', // Plugins
      	'options-general.php', // Settings
@@ -70,7 +71,7 @@
 	function edit_admin_menus() {
 		remove_menu_page('edit-comments.php'); // Comments
 		remove_menu_page('tools.php'); // Tools
-		remove_menu_page('edit.php'); // Posts
+		// remove_menu_page('edit.php'); // Posts
 		remove_menu_page('users.php'); // Users
 	}
 	add_action( 'admin_menu', 'edit_admin_menus' );

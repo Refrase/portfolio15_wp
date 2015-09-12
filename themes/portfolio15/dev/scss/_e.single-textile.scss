@@ -1,0 +1,26 @@
+/* ----- Piece: Textile ----- */
+
+.piece__pics--textile {
+  @include column-gap( $dist-xl );
+  @include column-count( 1 ); }
+
+.piece__pic-textile {
+	width: 100%;
+	@include column-break-inside( avoid ); }
+
+.piece__pic-textile li img {
+	width: 100%; }
+
+// ----- MQ ----- //
+
+@media ( min-width: 1201px ) and ( max-width: 1481px ) {
+
+	.piece__pics--textile { @include column-count( 2 ); }
+
+}
+
+@media ( min-width: 1481px ) {
+
+	.piece__pics--textile { @include column-count( 3 ); }
+
+}
