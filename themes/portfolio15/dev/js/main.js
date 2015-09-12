@@ -98,7 +98,7 @@ jQuery( document ).ready( function($) {
 
 	/* ----- Video følger parentstørrelse -----*/
 	function setVideoSizeToParent() {
-	  $( '#piece__video' ).css({
+	  $( '.piece__video' ).css({
 	  	width: $( '.piece' ).innerWidth() + 'px',
 	  	height: $( '.piece' ).innerWidth() * 0.56 + 'px'
 	  });

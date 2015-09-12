@@ -38,4 +38,41 @@
     $html = preg_replace( '/(width|height)=\"\d*\"\s/', "", $html );
     return $html; }
 
+  // WP admin: Menu item order
+	function custom_menu_order($menu_ord) {
+    if (!$menu_ord) return true;
+
+    return array(
+      'index.php', // Dashboard
+      'separator1', // First separator
+      'edit.php?post_type=website',
+      'edit.php?post_type=infographic',
+      'edit.php?post_type=motiongraphic',
+      'edit.php?post_type=interactive',
+      'edit.php?post_type=visualidentity',
+      'edit.php?post_type=print',
+      'edit.php?post_type=textile',
+      'edit.php?post_type=x',
+      'separator2', // Second separator
+      'edit.php?post_type=page', // Pages
+     	'upload.php', // Media
+     	'plugins.php', // Plugins
+     	'options-general.php', // Settings
+      'link-manager.php', // Links
+      'themes.php', // Appearance
+      'separator-last', // Last separator
+    );
+	}
+	add_filter('custom_menu_order', 'custom_menu_order'); // Activate custom_menu_order
+	add_filter('menu_order', 'custom_menu_order');
+
+	// WP admin: Remove menu items
+	function edit_admin_menus() {
+		remove_menu_page('edit-comments.php'); // Comments
+		remove_menu_page('tools.php'); // Tools
+		remove_menu_page('edit.php'); // Posts
+		remove_menu_page('users.php'); // Users
+	}
+	add_action( 'admin_menu', 'edit_admin_menus' );
+
 ?>

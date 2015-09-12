@@ -3,7 +3,7 @@
   <?php include( 'piecemeta-top.php' ); ?>
 
     <div class="piece__pic piece__pic-motion--video">
-		  <iframe id="piece__video" src="<?php the_field( 'video_link' ); ?>" frameborder="0" allowfullscreen></iframe>
+		  <iframe class="piece__video" src="<?php the_field( 'video_link' ); ?>" frameborder="0" allowfullscreen></iframe>
     </div>
 
   <?php include( 'piecemeta-bottom.php' ); ?>
