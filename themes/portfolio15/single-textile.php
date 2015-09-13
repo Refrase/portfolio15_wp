@@ -2,7 +2,7 @@
 
   <?php include( 'piecemeta-top.php' ); ?>
 
-		<article class="piece__pics--textile">
+		<article class="piece__pics-textile">
 
 			<ul class="piece__pic piece__pic-textile">
 	      <li><p class="piece__splitter"><?php the_field( 'textiles_only_title' ); ?></p></li>

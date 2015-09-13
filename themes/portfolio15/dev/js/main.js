@@ -99,14 +99,27 @@ jQuery( document ).ready( function($) {
 	/* ----- Video følger parentstørrelse -----*/
 	function setVideoSizeToParent() {
 	  $( '.piece__video' ).css({
-	  	width: $( '.piece' ).innerWidth() + 'px',
-	  	height: $( '.piece' ).innerWidth() * 0.56 + 'px'
+	  	width: $( '.piece__pic' ).innerWidth() + 'px',
+	  	height: $( '.piece__pic' ).innerWidth() * 0.56 + 'px'
 	  });
 	};
 	setVideoSizeToParent();
 
   // Følg størrelse ved ændring af vinduesstørrelse
   $( window ).resize( setVideoSizeToParent );
+	/* ----- / -----*/
+
+	/* ----- Airlook-video følger parentstørrelse -----*/
+	function setAirlookSizeToParent() {
+	  $( '.piece__video--airlook' ).css({
+	  	width: $( '.piece__pic-visuali--airlook' ).innerWidth() + 'px',
+	  	height: $( '.piece__pic-visuali--airlook' ).innerWidth() * 0.56 + 'px'
+	  });
+	};
+	setAirlookSizeToParent();
+
+  // Følg størrelse ved ændring af vinduesstørrelse
+  $( window ).resize( setAirlookSizeToParent );
 	/* ----- / -----*/
 
 });
