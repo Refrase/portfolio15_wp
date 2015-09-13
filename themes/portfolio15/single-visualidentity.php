@@ -35,25 +35,33 @@
 	    </ul>
 
 	    <ul class="piece__pic piece__pic-visuali">
-	      <li><p class="piece__splitter"><?php the_field( 'imagery_in_context_1_title' ); ?></p></li>
-	      <li><img src="<?php the_field( 'imagery_in_context_1' ); ?>"></li>
+	      <li><p class="piece__splitter"><?php the_field( 'imagery_in_context_3_title' ); ?></p></li>
+	      <li><img src="<?php the_field( 'imagery_in_context_3' ); ?>"></li>
 	    </ul>
 
-	    <ul class="piece__pic piece__pic-visuali">
-	      <li><p class="piece__splitter"><?php the_field( 'imagery_in_context_2_title' ); ?></p></li>
-	      <li><img src="<?php the_field( 'imagery_in_context_2' ); ?>"></li>
-	    </ul>
+			<div class="piece__pic-visuali--banners">
+		    <ul class="piece__pic piece__pic-visuali">
+		      <li><p class="piece__splitter"><?php the_field( 'banner_in_context_1_title' ); ?></p></li>
+		      <li><img src="<?php the_field( 'banner_in_context_1' ); ?>"></li>
+		    </ul>
 
-	    <ul class="piece__pic piece__pic-visuali">
-	      <li><p class="piece__splitter"><?php the_field( 'banner_in_context_1_title' ); ?></p></li>
-	      <li><img src="<?php the_field( 'banner_in_context_1' ); ?>"></li>
-	    </ul>
+		    <ul class="piece__pic piece__pic-visuali">
+		      <li><p class="piece__splitter"><?php the_field( 'banner_in_context_2_title' ); ?></p></li>
+		      <li><img src="<?php the_field( 'banner_in_context_2' ); ?>"></li>
+		    </ul>
+	    </div>
 
+			<div class="piece__pic-visuali--posters">
+		    <ul class="piece__pic piece__pic-visuali">
+		      <li><p class="piece__splitter"><?php the_field( 'imagery_in_context_1_title' ); ?></p></li>
+		      <li><img src="<?php the_field( 'imagery_in_context_1' ); ?>"></li>
+		    </ul>
 
-	    <ul class="piece__pic piece__pic-visuali">
-	      <li><p class="piece__splitter"><?php the_field( 'banner_in_context_2_title' ); ?></p></li>
-	      <li><img src="<?php the_field( 'banner_in_context_2' ); ?>"></li>
-	    </ul>
+		    <ul class="piece__pic piece__pic-visuali">
+		      <li><p class="piece__splitter"><?php the_field( 'imagery_in_context_2_title' ); ?></p></li>
+		      <li><img src="<?php the_field( 'imagery_in_context_2' ); ?>"></li>
+		    </ul>
+		  </div>
 
 	    <div class="piece__pic piece__pic-visuali--video">
 	    	<p class="piece__splitter"><?php the_field( 'video_title' ); ?></p>

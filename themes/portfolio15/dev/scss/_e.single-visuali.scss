@@ -1,6 +1,8 @@
 /* ----- Piece: Visual Identity ----- */
 
 .piece__pics-visuali,
+.piece__pic-visuali--posters,
+.piece__pic-visuali--banners,
 .piece__pic-visuali--airlooks {
   @include column-gap( $dist-xl );
   @include column-count( 1 ); }
@@ -16,6 +18,15 @@
 // ----- MQ ----- //
 
 @media ( min-width: $section-bp1 ) {
+
+	.piece__pic-visuali--posters,
+	.piece__pic-visuali--banners {
+		@include column-gap( $dist-l );
+		@include column-count( 2 ); }
+
+}
+
+@media ( min-width: $section-bp1 ) and ( max-width: 1200px ) {
 
 	.piece__pic-visuali--airlooks { @include column-count( 2 ); }
 
