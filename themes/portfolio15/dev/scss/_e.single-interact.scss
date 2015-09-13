@@ -1,29 +1,5 @@
-/* ----- Piece: Textile ----- */
+/* ----- Piece: Interaction ----- */
 
-.piece__pics--interact {
-  @include column-gap( $dist-l );
-  @include column-count( 1 ); }
+.piece__pic--interact { width: 100%; max-width: 1000px; }
 
-.piece__pic--interact {
-	width: 100%;
-	@include column-break-inside( avoid ); }
-
-.piece__pic--interact li img {
-	width: 100%; }
-
-// ----- MQ ----- //
-
-@media ( min-width: 550px ) and ( max-width: 1201px ) { // Sat i _c.globals.scss
-
-	.piece__pics--interact {
-		@include column-count( 2 ); }
-
-}
-
-@media ( min-width: 1201px ) {
-
-	.piece__pics--interact {
-		@include column-gap( $dist-xl );
-		@include column-count( 3 ); }
-
-}
+.piece__pic--interact li img { width: 100%; }
