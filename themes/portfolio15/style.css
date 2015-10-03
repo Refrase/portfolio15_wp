@@ -3763,6 +3763,16 @@ ul {
   width: 100%;
 }
 
+@media (min-width: 769px) {
+  .piece__pic--print--brochure,
+  .piece__pic--print--badges {
+    clear: none;
+    float: left;
+    width: 50%;
+    max-width: 500px;
+  }
+}
+
 /* ----- Piece: Visual Identity ----- */
 .piece__pics-visuali,
 .piece__pic-visuali--posters,
