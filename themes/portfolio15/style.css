@@ -3753,6 +3753,16 @@ ul {
   width: 100%;
 }
 
+/* ----- Piece: Interaction ----- */
+.piece__pic--print {
+  width: 100%;
+  max-width: 1000px;
+}
+
+.piece__pic--print li img {
+  width: 100%;
+}
+
 /* ----- Piece: Visual Identity ----- */
 .piece__pics-visuali,
 .piece__pic-visuali--posters,
