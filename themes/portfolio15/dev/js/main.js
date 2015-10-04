@@ -18,11 +18,11 @@ jQuery( document ).ready( function($) {
 		menuLinks.unbind( 'mouseleave', hideLabel );
   };
 
-	if ( $( window ).width() > 768 ) { bindLabelToggle(); };
+	if ( $( window ).width() > 762 ) { bindLabelToggle(); }; // 768 - 6px (scrollbar)
 
 	$( window ).on( 'resize', function() {
 		// If screen wider than 768px: Bind function that hides/shows labels for menuicons to to '.menu--main li a'
-		if ( $( window ).width() > 768 ) {
+		if ( $( window ).width() > 762 ) {
 			$( '.menu--main li a span' ).css( 'display', 'none' );
 			bindLabelToggle();
 		// If narrower: Unbind it (because only label is shown on mobile sizes, so it shouldn't be toggleable)
@@ -109,6 +109,20 @@ jQuery( document ).ready( function($) {
   $( window ).resize( setVideoSizeToParent );
 	/* ----- / -----*/
 
+	/* ----- Portrait-video (iPhone app) følger parentstørrelse -----*/
+	function setPortraitVideoSizeToParent() {
+	  var videoWrap = $( '.piece__pic--interact--iframe' ).innerWidth();
+	  $( '.piece__clip' ).css({
+	  	width: videoWrap + 'px',
+	  	height: videoWrap * 1.76 + 'px'
+	  });
+	};
+	setPortraitVideoSizeToParent();
+
+  // Følg størrelse ved ændring af vinduesstørrelse
+  $( window ).resize( setPortraitVideoSizeToParent );
+	/* ----- / -----*/
+
 	/* ----- Airlook-video følger parentstørrelse -----*/
 	function setAirlookSizeToParent() {
 	  $( '.piece__video--airlook' ).css({
@@ -122,10 +136,9 @@ jQuery( document ).ready( function($) {
   $( window ).resize( setAirlookSizeToParent );
 	/* ----- / -----*/
 
-	/* ----- Video følger parentstørrelse -----*/
+	/* ----- Site følger parentstørrelse -----*/
 	function setIframeSizeToParent() {
 		var iframeWrap = $( '.piece__pic-x--iframe' ).innerWidth();
-		console.log(iframeWrap);
 		if ( iframeWrap > 768 ) { // Sæt til desktop landscape
 		  $( '.piece__iframe' ).css({
 		  	width: iframeWrap + 'px',

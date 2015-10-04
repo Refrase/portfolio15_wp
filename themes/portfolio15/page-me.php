@@ -9,12 +9,14 @@
   <section>
     <article class="me">
       <h1 class="header"><?php the_title(); ?></h1>
+      <p>Hjul med skills med mig der går indeni (se skitse i hånden)</p>
       <p class="text"><?php the_content(); ?></p>
     </article>
 
     <article>
       <h1>CV</h1>
       <p>FCN, Politiken, Zetland</p>
+      <p>LinkedIn-link</p>
     </article>
 
     <article>

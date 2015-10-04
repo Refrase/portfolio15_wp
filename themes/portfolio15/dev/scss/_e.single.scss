@@ -45,13 +45,17 @@
 // ----- MQ ----- //
 @media ( min-width: 769px ) {
 
-	.piece > .piece__text { width: $colw-6; }
-
 	.piece__ext-link {	margin-bottom: $dist-l; }
 
 }
 
-@media ( min-width: 1200px ) {
+@media ( min-width: 960px ) {
+
+	.piece > .piece__text { width: $colw-6; }
+
+}
+
+@media ( min-width: 1420px ) {
 
 	.piece > .piece__text { width: $colw-4; }
 

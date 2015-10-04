@@ -1,5 +1,18 @@
 /* ----- Piece: Interaction ----- */
 
+.piece__pic--interact--clips {
+  @include column-gap( $dist-xl );
+  @include column-count( 1 ); }
+
 .piece__pic--interact { width: 100%; max-width: 1000px; }
 
 .piece__pic--interact li img { width: 100%; }
+
+
+@media ( min-width: $section-bp1 ) {
+
+	.piece__pic--interact--clips {
+		@include column-count( 2 );
+		max-width: 1000px; }
+
+}
