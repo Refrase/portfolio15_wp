@@ -6,6 +6,11 @@ section {
 
 a { text-decoration: none; }
 
+iframe {
+	border: none;
+	width: 100%;
+}
+
 // Scrollbars
 ::-webkit-scrollbar {
   width: 6px;

@@ -122,4 +122,26 @@ jQuery( document ).ready( function($) {
   $( window ).resize( setAirlookSizeToParent );
 	/* ----- / -----*/
 
+	/* ----- Video følger parentstørrelse -----*/
+	function setIframeSizeToParent() {
+		var iframeWrap = $( '.piece__pic-x--iframe' ).innerWidth();
+		console.log(iframeWrap);
+		if ( iframeWrap > 768 ) { // Sæt til desktop landscape
+		  $( '.piece__iframe' ).css({
+		  	width: iframeWrap + 'px',
+		  	height: iframeWrap * 0.56 + 'px'
+		  });
+		} else { // Sæt til portrait iPad/iPhone forhold
+			$( '.piece__iframe' ).css({
+		  	width: iframeWrap + 'px',
+		  	height: iframeWrap * 1.333 + 'px'
+		  });
+		}
+	};
+	setIframeSizeToParent();
+
+  // Følg størrelse ved ændring af vinduesstørrelse
+  $( window ).resize( setIframeSizeToParent );
+	/* ----- / -----*/
+
 });

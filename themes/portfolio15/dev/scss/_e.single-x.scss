@@ -1,0 +1,17 @@
+/* ----- Piece: Interaction ----- */
+
+.piece__pic--print { width: 100%; max-width: 1000px; }
+
+.piece__pic--print li img { width: 100%; }
+
+// ----- MQ ----- //
+@media ( min-width: 769px ) {
+
+	.piece__pic--print--brochure,
+	.piece__pic--print--badges {
+		clear: none;
+		float: left;
+		width: 50%;
+		max-width: 500px; }
+
+}
