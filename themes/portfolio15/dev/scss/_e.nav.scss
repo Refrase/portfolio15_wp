@@ -2,6 +2,8 @@
 
 $menu-bord-colr: $colr-b3;
 
+nav { position: relative; z-index: 1000; }
+
 .menu {
 	@include display( flex );
 	@include align-items( center );

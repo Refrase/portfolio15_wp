@@ -1,0 +1,29 @@
+/* ----- Me ----- */
+
+.skillwheel__wrap {
+	position: relative;
+	width: 720px;
+	margin-top: -240px;
+	margin-left: -240px;
+	margin-bottom: $dist-xl; }
+
+.skillwheel__wrap--counter-rotate {
+	animation: skillwheel-rotate 5s infinite linear;
+	animation-direction: reverse;
+	animation-play-state: running; }
+.skillwheel__wrap--counter-rotate:hover { animation-play-state: paused; }
+.skillwheel__wrap--counter-rotate:active { animation-play-state: paused; }
+
+.skillwheel {
+	animation: skillwheel-rotate 4s infinite linear; }
+
+.me__face {
+	position: absolute;
+	left: 320px;
+	top: 300px;
+	width: 80px; }
+
+.me__face--running { display: none; }
+
+@keyframes skillwheel-rotate {
+	100% { transform: rotate(360deg); } }

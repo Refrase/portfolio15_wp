@@ -7,10 +7,17 @@
 <?php get_header(); ?>
 
   <section>
+    <div class="skillwheel__wrap">
+      <div class="skillwheel__wrap--counter-rotate">
+        <img class="skillwheel" src="http://localhost/003_Portfolio15/portfolio15_site_wp/wp-content/themes/portfolio15/images/skills_mollehjul.svg" />
+      </div>
+      <img class="me__face me__face--serious" src="http://localhost/003_Portfolio15/portfolio15_site_wp/wp-content/themes/portfolio15/images/mig_serios.png" />
+      <img class="me__face me__face--running" src="http://localhost/003_Portfolio15/portfolio15_site_wp/wp-content/themes/portfolio15/images/mig_pandeband.png" />
+    </div>
+
     <article class="me">
-      <h1 class="header"><?php the_title(); ?></h1>
-      <p>Hjul med skills med mig der går indeni (se skitse i hånden)</p>
-      <p class="text"><?php the_content(); ?></p>
+      <h1 class="header"><?php the_field( 'my_name' ); ?></h1>
+      <p class="text"><?php the_field( 'about_me' ); ?></p>
     </article>
 
     <article>
@@ -18,26 +25,6 @@
       <p>FCN, Politiken, Zetland</p>
       <p>LinkedIn-link</p>
     </article>
-
-    <article>
-      <h1>Skills</h1>
-      <p>Infographic over skill-niveauer i Adobe-pakke, kodesprog osv.</p>
-    </article>
-
-    <ul>
-      <li>Adobe Illustrator: *****</li>
-      <li>Adobe After Effects: ****</li>
-      <li>Adobe Photoshop: ***</li>
-      <li>Adobe InDesign: **</li>
-      <li>Cinema 4D: **</li>
-      <li>HTML: ****</li>
-      <li>CSS: ****</li>
-      <li>JavaScript: ***</li>
-      <li>PHP: **</li>
-      <li>WordPress: **</li>
-      <li>Pixate: ***</li>
-      <li>InVision: ****</li>
-    </ul>
   </section>
 
 <?php get_footer(); ?>
