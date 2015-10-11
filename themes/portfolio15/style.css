@@ -4002,6 +4002,19 @@ nav {
 }
 
 .me__face--running {
+  left: 332px;
+  display: none;
+}
+
+.man__stick {
+  position: absolute;
+  left: 254px;
+  top: 250px;
+  width: 230px;
+  z-index: -1;
+}
+
+.man__stick--running {
   display: none;
 }
 

@@ -14,8 +14,7 @@
 .skillwheel__wrap--counter-rotate:hover { animation-play-state: paused; }
 .skillwheel__wrap--counter-rotate:active { animation-play-state: paused; }
 
-.skillwheel {
-	animation: skillwheel-rotate 4s infinite linear; }
+.skillwheel { animation: skillwheel-rotate 4s infinite linear; }
 
 .me__face {
 	position: absolute;
@@ -23,7 +22,18 @@
 	top: 300px;
 	width: 80px; }
 
-.me__face--running { display: none; }
+.me__face--running {
+	left: 332px;
+	display: none; }
+
+.man__stick {
+	position: absolute;
+	left: 254px;
+	top: 250px;
+	width: 230px;
+	z-index: -1; }
+
+.man__stick--running { display: none; }
 
 @keyframes skillwheel-rotate {
 	100% { transform: rotate(360deg); } }

@@ -11,8 +11,13 @@
       <div class="skillwheel__wrap--counter-rotate">
         <img class="skillwheel" src="http://localhost/003_Portfolio15/portfolio15_site_wp/wp-content/themes/portfolio15/images/skills_mollehjul.svg" />
       </div>
-      <img class="me__face me__face--serious" src="http://localhost/003_Portfolio15/portfolio15_site_wp/wp-content/themes/portfolio15/images/mig_serios.png" />
-      <img class="me__face me__face--running" src="http://localhost/003_Portfolio15/portfolio15_site_wp/wp-content/themes/portfolio15/images/mig_pandeband.png" />
+
+      <img class="man__stick man__stick--walking" src="<?php the_field( 'man_walking' ); ?>" />
+      <img class="man__stick man__stick--running" src="<?php the_field( 'man_running' ); ?>" />
+
+      <img class="me__face me__face--serious" src="<?php the_field( 'me_serious' ); ?>" />
+      <img class="me__face me__face--running" src="<?php the_field( 'me_running' ); ?>" />
+
     </div>
 
     <article class="me">

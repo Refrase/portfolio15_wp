@@ -183,6 +183,7 @@ jQuery( document ).ready( function($) {
 	// 	});
 			$( '.me__face--serious' ).hide();
 			$( '.me__face--running' ).show();
+			$( '.man__stick--running' ).show();
 	});
 
 	$( '.skillwheel' ).on( 'mouseleave', function() {
@@ -192,6 +193,7 @@ jQuery( document ).ready( function($) {
 	// 	});
 			$( '.me__face--serious' ).show();
 			$( '.me__face--running' ).hide();
+			$( '.man__stick--running' ).hide();
 	});
 	/* ----- / -----*/
 
