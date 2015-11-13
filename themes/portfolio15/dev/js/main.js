@@ -197,4 +197,22 @@ jQuery( document ).ready( function($) {
 	});
 	/* ----- / -----*/
 
+	/* ----- Skift overskrift ud på the money, når møntvideo er loaded -----*/
+	var coinVideo = document.getElementById( 'videoCoins' );
+	var headerInit = $( '.header__init__themoney' );
+	var contentLoad = $( '.content__load__themoney' );
+
+	function checkVideoLoad() {
+		if( coinVideo.readyState === 4 ) {
+			headerInit.fadeOut( 400 );
+			setTimeout( function(){
+				contentLoad.fadeIn( 200 );
+			}, 400);
+		} else {
+			setTimeout( checkVideoLoad, 100 );
+		}
+	}
+	checkVideoLoad();
+	/* ----- / -----*/
+
 });

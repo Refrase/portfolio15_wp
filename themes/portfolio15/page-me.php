@@ -20,14 +20,16 @@
 
     </div>
 
+    <p>Note: Skill levels assessed by me.</p>
+
     <article class="me">
-      <h1 class="header"><?php the_field( 'my_name' ); ?></h1>
+      <h1 class="header"><?php the_field( 'about_me_title' ); ?></h1>
       <p class="text"><?php the_field( 'about_me' ); ?></p>
     </article>
 
     <article>
-      <h1>CV</h1>
-      <p>FCN, Politiken, Zetland</p>
+      <h1 class="header"><?php the_field( 'cv_title' ); ?></h1>
+      <p class="text"><?php the_field( 'cv' ); ?></p>
       <p>LinkedIn-link</p>
     </article>
   </section>

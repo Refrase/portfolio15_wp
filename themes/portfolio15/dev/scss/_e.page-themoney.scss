@@ -1,0 +1,25 @@
+/* ----- The Money ----- */
+
+.content__load__themoney { display: none; }
+
+.text__themoney { width: $colw-10; }
+
+.video__wrap {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background: #fff;
+	z-index: -2;
+	// object-fit: contain;
+}
+
+.video__coins {
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: -1;
+	min-height: 100%;
+	min-width: 100%;
+}
