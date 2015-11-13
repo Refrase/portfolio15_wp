@@ -9,15 +9,13 @@
   <section>
 
     <article>
-      <h1 class="header header__init__themoney">Wait for it...</h1>
+      <h1 class="header header__init__themoney"><?php the_field( 'the_money_title_init' ); ?></h1>
       <div class="content__load__themoney">
-        <h1 class="header">Probably overkill</h1>
-        <h3 class="header">(I couldn't kill the darling - doesn't it look cool!?)</h3>
-        <p class="text text__themoney">Dont worry. It isn't necessarily expensive.
-        <br>If you want to talk you can let me know in the following ways:</p>
-  			<p>+45 41 29 41 27
-  			<br>
-        andreasrefras@gmail.com</p>
+        <h1 class="header"><?php the_field( 'the_money_title_load' ); ?></h1>
+        <h3 class="header"><?php the_field( 'the_money_subtitle_load' ); ?></h3>
+        <p class="text text__themoney"><?php the_field( 'the_money_text' ); ?></p>
+  			<p><?php the_field( 'the_money_phone' ); ?></p>
+  			<p><?php the_field( 'the_money_mail' ); ?></p>
       </div>
     </article>
 
